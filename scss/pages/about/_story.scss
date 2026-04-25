@@ -1,0 +1,18 @@
+.story-section {
+  padding: 220px 0 115px 0;
+  background-image: url('../images/about-tomato-background.png');
+  background-repeat: no-repeat;
+  background-position: center 94px;
+}
+
+.story-container {
+  display: flex;
+  gap: 40px;
+  justify-content: space-between;
+}
+
+.story-text {
+  max-width: 665px;
+  align-content: flex-end;
+  margin-bottom: 94px;
+}

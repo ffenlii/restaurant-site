@@ -1,0 +1,29 @@
+.advantages-section {
+  padding: 210px 0 190px 0;
+
+  &__list {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    flex-shrink: 0;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+
+  &__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--color-white-eb);
+    width: 260px;
+    height: 260px;
+  }
+}

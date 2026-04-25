@@ -1,0 +1,104 @@
+button {
+  font-size: 32px;
+  color: var(--color-white-f);
+  background-color: transparent;
+  border: 2px solid var(--color-brand-normal);
+  padding: 20px 46px;
+  transition:
+    background-color 0.3s,
+    color 0.3s,
+    border 0.3s,
+    transform 0.3s;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.header-button {
+  border-color: var(--color-white-f);
+  font-family: 'Rufina', serif;
+
+  &:hover {
+    background-color: var(--color-brand-normal);
+    border-color: var(--color-brand-normal);
+  }
+}
+
+.header-section__btn-menu {
+  flex-shrink: 0;
+  padding: 0;
+  border: none;
+  /* Тому, що іконка лініями */
+  stroke: var(--color-white-f);
+  width: 94px;
+  height: 71px;
+}
+
+.header-section__btn-menu:hover {
+  stroke: var(--color-light-grey);
+}
+
+.button-reservation {
+  background-color: var(--color-brand-dark);
+  border-color: var(--color-black);
+  padding: 20px 95px;
+}
+
+.button-reservation-light {
+  background-color: var(--color-brand-normal);
+  transition: transform 0.3s;
+}
+
+.button-reservation-light:hover {
+  background-color: var(--color-brand-dark);
+}
+
+.bloger-button {
+  background-color: var(--color-brand-normal);
+  border: none;
+  width: 205px;
+  height: 64px;
+  padding: 7px 53px;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+}
+
+.button-subscribe {
+  background-color: var(--color-brand-normal);
+  border: none;
+}
+
+.button-subscribe:hover {
+  background-color: transparent;
+  border-color: var(--color-white-f);
+}
+
+.comment-button {
+  border: none;
+  transition: transform 0.3s;
+}
+
+.comment-button:hover {
+  transform: scale(1.1);
+}
+
+.comment-button.back {
+  transform: rotate(180deg);
+}
+
+.modal-btn-close {
+  border: none;
+  position: absolute;
+  top: 40px;
+  left: 45px;
+  width: 85px;
+  height: 65px;
+  fill: var(--color-black);
+}
+
+.modal-btn-close:hover {
+  fill: var(--color-white-f);
+  cursor: pointer;
+}

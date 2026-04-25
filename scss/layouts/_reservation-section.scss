@@ -1,0 +1,48 @@
+.reservation-section {
+  padding: 240px 0 250px 0;
+  background-color: var(--color-white-eb);
+  text-align: center;
+}
+
+.reservation-text {
+  margin-bottom: 135px;
+}
+
+.book-form {
+  margin-bottom: 135px;
+}
+
+.reservation-element {
+  padding: 30px 40px;
+  border: 2px solid var(--color-black);
+  background-color: transparent;
+  font-family: Lato, sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.4;
+}
+
+.reservation-element::placeholder {
+  color: var(--color-black);
+}
+
+.reservation-element:focus {
+  border-color: var(--color-brand-normal);
+  outline: none;
+}
+
+.reservation-make {
+  max-width: 1650px;
+  width: 100%;
+  margin-bottom: 46px;
+}
+
+.reservation-group {
+  display: flex;
+  gap: 45px;
+  justify-content: space-between;
+}
+
+.book-select {
+  width: 32%;
+}

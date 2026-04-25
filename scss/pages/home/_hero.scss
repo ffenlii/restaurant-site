@@ -1,0 +1,33 @@
+.hero-section {
+  color: var(--color-white-f);
+  background-color: var(--color-brand-dark);
+  padding: 310px 0 222px 0;
+
+  &__image {
+    position: absolute;
+    z-index: 0;
+    top: 435px;
+    right: 50px;
+  }
+
+  &__decorate {
+    position: absolute;
+    top: 1165px;
+    right: 422px;
+  }
+
+  &__title--limited {
+    max-width: 1057px;
+  }
+
+  &__underside {
+    display: flex;
+    margin-top: 760px;
+    justify-content: space-between;
+  }
+
+  &__text-distanse {
+    max-width: 508px;
+    margin-bottom: 85px;
+  }
+}

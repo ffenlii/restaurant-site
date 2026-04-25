@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <header class="header-section">
+      <div class="container">
+        <div class="header-container">
+          <div class="header-nav">
+            <a href="./home.html">
+              <img src="./images/logo_f.svg" alt="restaurant's logo" />
+            </a>
+            <button class="header-button-menu modal-btn-open'" type="button">
+              <svg width="94" height="71">
+                <use href="./images/icons.svg#icon-nav-open"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="header-link">
+            <address>
+              <a class="header-address link" href="tel:+86852346000"
+                >+86 852 346 000</a
+              >
+            </address>
+            <button class="header-button button" type="button">
+              Reservations
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="hero-section contact-hero-section">
+        <div class="container">
+          <h1 class="hero-title">Get in Touch</h1>
+          <p class="hero-text hero-description">
+            The freshest ingredients for you every day
+          </p>
+          <div class="work-schedule">
+            <div class="open-days">
+              <p class="open-text">Open Time</p>
+              <p>Sunday - Friday</p>
+            </div>
+            <ul class="schedule-text">
+              <li class="schedule-hours">Brunch 11:00–12:00</li>
+              <li class="schedule-hours">Lunch 13:00–17:00</li>
+              <li class="schedule-hours">Dinner 18:00–20:00</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="contact-section">
+        <div class="container">
+          <div class="contact-container">
+            <img
+              src="./images/contact_table.jpg"
+              alt="Sprigs and lemon on the table"
+            />
+            <div class="contact-text">
+              <p class="retreat">We can be contacted via email</p>
+              <address>
+                <a class="link contact-link" href="mailto:info@foodzero.com "
+                  >info@foodzero.com
+                </a>
+              </address>
+              <p class="retreat">or telephone on</p>
+              <address>
+                <a class="link contact-link" href="tel:+86852346000"
+                  >+86 852 346 000</a
+                >
+              </address>
+            </div>
+          </div>
+          <div class="address-container">
+            <div class="address-inform">
+              <p class="adress-text">
+                We are located in 1959 Sepulveda Blvd. Culver City, CA, 90230
+              </p>
+              <button class="button map-button" type="button">
+                <a
+                  class="map-link"
+                  href="https://maps.app.goo.gl/PiYNzHjYKYS9VHRX9"
+                  target="_blank"
+                >
+                  View in maps
+                </a>
+              </button>
+            </div>
+            <img src="./images/contact_garden.jpg" alt="Green garden" />
+          </div>
+        </div>
+      </section>
+      <section class="reservation-section contact">
+        <div class="container">
+          <div class="reservation-chapter">
+            <h2 class="reservation-title">Make a Reservation</h2>
+            <p class="inform-text reservation">Get in touch with restaurant</p>
+          </div>
+          <form class>
+            <div class="reservation-group">
+              <label class="visually-hidden" for="user-first-name">
+                First name
+              </label>
+              <input
+                class="reservation-element reservation-make"
+                type="text"
+                name="user-first-name"
+                id="user-first-name"
+                placeholder="First name"
+              />
+
+              <label class="visually-hidden" for="user-last-name">
+                Last name
+              </label>
+              <input
+                class="reservation-element reservation-make"
+                type="text"
+                name="user-last-name"
+                id="user-last-name"
+                placeholder="Last name"
+              />
+            </div>
+
+            <label class="visually-hidden" for="user-email">Email</label>
+            <input
+              class="reservation-element reservation-make"
+              type="email"
+              name="user-email"
+              id="user-email"
+              placeholder="Email"
+            />
+
+            <label class="visually-hidden" for="user-tel">Phone</label>
+            <input
+              class="reservation-element reservation-make"
+              type="tel"
+              name="user-tel"
+              id="user-tel"
+              placeholder="Phone"
+            />
+
+            <div class="reservation-group">
+              <label class="visually-hidden" for="book-date">Date</label>
+              <input
+                class="reservation-element reservation-make"
+                type="date"
+                name="book-date"
+                id="book-date"
+              />
+
+              <label class="visually-hidden" for="book-time">Time</label>
+              <select
+                class="reservation-element reservation-make"
+                name="book-time"
+                id="book-time"
+              >
+                <option value="">1:00 pm</option>
+                <option value="">2:00 pm</option>
+                <option value="">3:00 pm</option>
+                <option value="">4:00 pm</option>
+                <option value="">5:00 pm</option>
+                <option value="">6:00 pm</option>
+                <option value="">7:00 pm</option>
+                <option value="">8:00 pm</option>
+                <option value="">9:00 pm</option>
+              </select>
+            </div>
+
+            <label class="visually-hidden" for="book-persons">Persons</label>
+            <select
+              class="reservation-element reservation-make"
+              type="date"
+              name="book-persons"
+              id="book-persons"
+            >
+              <option value="">1 person</option>
+              <option value="">2 person</option>
+              <option value="">3 person</option>
+              <option value="">4 person</option>
+              <option value="">5 person</option>
+              <option value="">6 person</option>
+            </select>
+          </form>
+          <button class="button-reservation-light" type="button">
+            Book now
+          </button>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-container-link">
+          <div class="footer-link">
+            <a class="footer-logo" href="/">
+              <h3 class="footer-title">Food Zero.</h3>
+            </a>
+            <ul class="footer-contacts">
+              <p class="footer-item">Contacts</p>
+              <li>
+                <a class="link footer-address" href="tel:+86852346000"
+                  >+86 852 346 000</a
+                >
+              </li>
+              <li>
+                <a class="link footer-address" href="mailto:info@foodzero.com"
+                  >info@foodzero.com</a
+                >
+              </li>
+              <li>
+                <a
+                  class="link footer-address"
+                  href="https://maps.app.goo.gl/G3fx3dMrVu5tf39C7"
+                  >1959 Sepulveda Blvd. Culver City, CA, 90230</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer-form">
+            <p class="footer-item">Never Miss a Recipe</p>
+            <div class="subscribe-item">
+              <form class="subscribe-form">
+                <div class="footer-field">
+                  <label
+                    class="footer-label visually-hidden"
+                    for="user-email"
+                  ></label>
+                  <input
+                    class="footer-input"
+                    type="email"
+                    name="user-email"
+                    id="user-email"
+                    placeholder="Email Address"
+                  />
+                </div>
+              </form>
+              <button class="button-subscribe button" type="submit">
+                Subscibe
+              </button>
+            </div>
+            <p class="footer-inform">
+              Join our subscribers and get best recipe delivered each week!
+            </p>
+          </div>
+        </div>
+        <div class="footer-info">
+          <p class="footer-copyright">
+            &copy; 2020 Zero Inc. All rights Reserved
+          </p>
+          <address>
+            <ul class="address-social">
+              <li>
+                <a href="#">
+                  <svg class="address-icon" width="28" height="28">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg class="address-icon" width="28" height="22">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg class="address-icon" width="26" height="26">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg class="address-icon" width="28" height="22">
+                    <use href="./images/icons.svg#icon-youtube"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </address>
+        </div>
+      </div>
+    </footer>
+
+    <div class="modal is-hidden">
+      <div class="modal-window">
+        <button class="modal-btn-close" type="button">
+          <svg width="30" height="30">
+            <use href=".//images/modal-btn.svg"></use>
+          </svg>
+        </button>
+        <ul class="modal-link">
+          <li class="modal-item">
+            <a class="modal-link-text" href="./home.html">home</a>
+          </li>
+          <li class="modal-item">
+            <a class="modal-link-text" href="./menu.html">menu</a>
+          </li>
+          <li class="modal-item">
+            <a class="modal-link-text" href="./about.html">about</a>
+          </li>
+          <li class="modal-item">
+            <a class="modal-link-text" href="./contact.html">contact</a>
+          </li>
+        </ul>
+        <div class="modal-contact">
+          <ul class="footer-contacts">
+            <p class="modal-contact-title">Contact</p>
+            <li>
+              <a class="link modal-address" href="tel:+86852346000"
+                >+86 852 346 000</a
+              >
+            </li>
+            <li>
+              <a class="link modal-address" href="mailto:info@foodzero.com"
+                >info@foodzero.com</a
+              >
+            </li>
+            <li>
+              <a
+                class="link modal-address"
+                href="https://maps.app.goo.gl/G3fx3dMrVu5tf39C7"
+                >1959 Sepulveda Blvd. Culver City, CA, 90230</a
+              >
+            </li>
+          </ul>
+          <ul class="address-social">
+            <li>
+              <a href="#">
+                <svg class="address-icon" width="28" height="28">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg class="address-icon" width="28" height="22">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg class="address-icon" width="26" height="26">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg class="address-icon" width="28" height="22">
+                  <use href="./images/icons.svg#icon-youtube"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
+  </body>
+</html>

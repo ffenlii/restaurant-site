@@ -1,0 +1,67 @@
+.contact-section {
+  background-image: url('../images/contact-orange-background.png');
+  background-repeat: no-repeat;
+  background-position: center 152px;
+  background-size: 325px 270px;
+  font-size: 32px;
+  color: var(--color-brand-dark);
+  padding: 272px 0 135px 0;
+}
+
+.contact-container {
+  display: flex;
+  gap: 40px;
+  justify-content: space-between;
+  margin-bottom: 145px;
+}
+
+.contact-text {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: flex-end;
+  margin-bottom: 80px;
+  align-items: center;
+}
+
+.contact-text .retreat {
+  margin-bottom: 0;
+}
+
+.contact-link {
+  color: var(--color-brand-normal);
+}
+
+.address-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.address-inform {
+  max-width: 744px;
+  align-content: flex-end;
+  margin-bottom: 325px;
+}
+
+.map-button {
+  color: var(--color-black);
+}
+
+.map-link {
+  color: var(--color-black);
+  font-family: Rufina, sans-serif;
+}
+
+.map-button:hover .map-link {
+  color: var(--color-white-f);
+}
+
+.map-button:hover {
+  color: var(--color-white-f);
+  background-color: var(--color-brand-dark);
+}
+
+.adress-text {
+  margin-bottom: 55px;
+}

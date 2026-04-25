@@ -1,0 +1,75 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  max-width: 1920px;
+  max-height: 1080px;
+  width: 100%;
+  height: 100%;
+  color: var(--color-white-f);
+  background-image:
+    linear-gradient(rgba(35, 48, 0, 0.8), rgba(35, 48, 0, 0.8)),
+    url('../images/modal-background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+  transition:
+    opacity 0.3s,
+    visibility 0.3s;
+
+  &__window {
+    display: flex;
+    gap: 200px;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1300px;
+    width: 100%;
+  }
+
+  &__link {
+    font-size: 66px;
+    text-transform: uppercase;
+    max-width: 350px;
+  }
+
+  &__item {
+    padding-bottom: 42px;
+    list-style-type: disc;
+    cursor: pointer;
+    transition: color 0.3s;
+
+    &:hover {
+      color: var(--color-brand-light);
+    }
+  }
+
+  &__text {
+    color: var(--color-white-f);
+    transition: color 0.3s;
+
+    &:hover {
+      color: var(--color-brand-light);
+    }
+  }
+
+  &__contact-title {
+    font-family: Rufina, serif;
+    padding: 20px 0;
+    margin-bottom: 38px;
+    font-size: 32px;
+    border-bottom: 4px dashed var(--color-white-f);
+  }
+}
+
+.modal.is-hidden {
+  /* Щоб заховати модальне вікно */
+  opacity: 0;
+  /* Чи буде елемент видимий для браузера */
+  visibility: hidden;
+  pointer-events: none;
+}

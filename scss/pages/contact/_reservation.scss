@@ -1,0 +1,19 @@
+.reservation-section.contact {
+  background-image: url('../images/reservation-background.png');
+  background-repeat: no-repeat;
+  background-position: 50px 60px;
+}
+
+.reservation-chapter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.reservation-title {
+  margin-bottom: 18px;
+}
+
+.inform-text.reservation {
+  margin-bottom: 115px;
+}

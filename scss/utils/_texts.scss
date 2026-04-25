@@ -1,0 +1,35 @@
+.text-title {
+  font-size: 148px;
+  line-height: 1;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 50px;
+}
+
+.text-topic {
+  font-size: 108px;
+}
+
+.text-big {
+  font-size: 68px;
+  margin-bottom: 24px;
+  margin-top: 55px;
+}
+
+.text-medium {
+  font-size: 32px;
+}
+
+.text-small {
+  font-family: Lato, sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.text-limited {
+  max-width: 565px;
+}
+
+.text-centered {
+  text-align: center;
+}

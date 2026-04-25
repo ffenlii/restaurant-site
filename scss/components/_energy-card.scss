@@ -1,0 +1,18 @@
+.energy-card {
+  height: 710px;
+  position: relative;
+
+  &__photo {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  &__link {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 48px 40px;
+  }
+}

@@ -1,0 +1,23 @@
+.comment-section {
+  padding: 120px 0 145px 0;
+  background-image: url('../images/comment-section-background.png');
+  background-repeat: no-repeat;
+  background-position-x: 1500px;
+  background-position-y: 130px;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__arrow {
+    display: flex;
+    align-items: center;
+  }
+
+  &__text {
+    margin-bottom: 86px;
+    max-width: 1265px;
+  }
+}

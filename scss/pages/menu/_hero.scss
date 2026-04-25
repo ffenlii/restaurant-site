@@ -1,0 +1,21 @@
+.hero-menu-section {
+  background-image: url('../images/menu-hero-section.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 350px 0 330px 0;
+  color: var(--color-white-f);
+
+  &__title--limited {
+    max-width: 780px;
+  }
+}
+
+.dish-text {
+  margin-bottom: 58px;
+}
+
+.menu-image {
+  max-width: 790px;
+  max-height: 988px;
+}

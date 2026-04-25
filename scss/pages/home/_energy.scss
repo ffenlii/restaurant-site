@@ -1,0 +1,19 @@
+.energy-section {
+  padding: 130px 0;
+  text-align: center;
+
+  &__list {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__item {
+    flex-basis: calc((100% - 80px) / 3);
+  }
+
+  &__distance {
+    margin-bottom: 125px;
+  }
+}

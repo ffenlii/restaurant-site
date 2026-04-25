@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
+
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <header class="header-section">
+      <div class="container">
+        <div class="header-container">
+          <div class="header-nav">
+            <a href="./home.html">
+              <img src="./images/logo_f.svg" alt="restaurant's logo" />
+            </a>
+            <button class="header-button-menu modal-btn-open'" type="button">
+              <svg width="94" height="71">
+                <use href="./images/icons.svg#icon-nav-open"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="header-link">
+            <address>
+              <a class="header-address link" href="tel:+86852346000"
+                >+86 852 346 000</a
+              >
+            </address>
+            <button class="header-button button" type="button">
+              Reservations
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="about-hero-section">
+        <div class="container">
+          <div class="about-hero-text">
+            <h1 class="hero-title">Who We Are</h1>
+            <p class="hero-text">
+              The most important thing for us is to give you the comfortable
+              dining experience
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="story-section">
+        <div class="container">
+          <div class="story-container">
+            <div class="story-text">
+              <h2 class="section-title">Our Story</h2>
+              <p class="inform-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus
+                lorem id penatibus imperdiet. Turpis egestas ultricies purus
+                auctor tincidunt lacus nunc.
+              </p>
+            </div>
+            <img
+              src="./images/about_chefs.jpg"
+              alt="people are cooking something"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="people-section">
+        <div class="container">
+          <ul>
+            <li>
+              <article class="people-container">
+                <div class="manager-name">
+                  <h3 class="item-title">Restuarant Manager</h3>
+                  <p class="people-name">Carson Hugn</p>
+                  <img src="./images/about_carson.jpg" alt="Manager Carson" />
+                </div>
+                <p class="inform-text manager-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et in
+                  sed in pellentesque ornare nunc nisl.
+                </p>
+              </article>
+            </li>
+            <li>
+              <article class="people-container">
+                <p class="inform-text chef-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et in
+                  sed in pellentesque ornare nunc nisl. Augue habitant accumsan,
+                  ut parturient orci ac etiam congue mi.
+                </p>
+                <div class="chef-name">
+                  <h3 class="item-title">Executive Chef</h3>
+                  <p class="people-name">Jane Cooper</p>
+                  <img src="./images/about_jane.jpg" alt="Executive Jane" />
+                </div>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="delicious-section">
+        <div class="container">
+          <h2 class="section-title">It looks delicious</h2>
+          <p class="inform-text delicious-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+          <button class="delicious-button-play">
+            <svg width="44px" height="54px">
+              <use href="./images/icons.svg#icon-button-play"></use>
+            </svg>
+          </button>
+        </div>
+      </section>
+      <section class="process-section">
+        <div class="container">
+          <h2 class="section-title process-title">Sophisticated Process</h2>
+          <ul>
+            <li class="slice-container">
+              <img src="./images/about_clice.jpg" alt="We cut the meat" />
+              <div class="slice-text">
+                <h3 class="process-item">01.Slice</h3>
+                <p class="inform-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus
+                  lorem id penatibus imperdiet. Turpis egestas ultricies purus
+                  auctor tincidunt lacus nunc. Convallis pellentesque quis
+                  fringilla sagittis. Egestas in risus sit nunc nunc, arcu donec
+                  nam etiam.
+                </p>
+              </div>
+            </li>
+            <div class="process-container">
+              <li class="bake-item">
+                <h3 class="process-item">03.Bake</h3>
+                <p class="inform-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus
+                  lorem id penatibus imperdiet.
+                </p>
+                <img src="./images/about_bake.jpg" alt="We bake meat" />
+              </li>
+              <li>
+                <img
+                  src="./images/about_pickled.jpg"
+                  alt="Steak sprinkled with salt"
+                />
+                <div class="pickled-item">
+                  <h3 class="process-item">02.Pickled</h3>
+                  <p class="inform-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Purus lorem id penatibus imperdiet.
+                  </p>
+                </div>
+              </li>
+            </div>
+          </ul>
+        </div>
+      </section>
+      <section class="reservation-section">
+        <div class="container">
+          <h2 class="section-title">Make a Reservation</h2>
+          <p class="inform-text reservation-text">
+            Get in touch with restaurant
+          </p>
+          <form class="book-form">
+            <label class="visually-hidden" for="book-date">Date</label>
+            <input
+              class="book-select reservation-element"
+              type="date"
+              name="book-date"
+              id="book-date"
+            />
+
+            <label class="visually-hidden" for="book-time">Time</label>
+            <select
+              class="book-select reservation-element"
+              name="book-time"
+              id="book-time"
+            >
+              <option value="">1:00 pm</option>
+              <option value="">2:00 pm</option>
+              <option value="">3:00 pm</option>
+              <option value="">4:00 pm</option>
+              <option value="">5:00 pm</option>
+              <option value="">6:00 pm</option>
+              <option value="">7:00 pm</option>
+              <option value="">8:00 pm</option>
+              <option value="">9:00 pm</option>
+            </select>
+
+            <label class="visually-hidden" for="book-persons">Persons</label>
+            <select
+              class="book-select reservation-element"
+              type="date"
+              name="book-persons"
+              id="book-persons"
+            >
+              <option value="">1 person</option>
+              <option value="">2 person</option>
+              <option value="">3 person</option>
+              <option value="">4 person</option>
+              <option value="">5 person</option>
+              <option value="">6 person</option>
+            </select>
+          </form>
+          <button class="button-reservation button" type="submit">
+            Book now
+          </button>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-container-link">
+          <div class="footer-link">
+            <a class="footer-logo" href="/">
+              <h3 class="footer-title">Food Zero.</h3>
+            </a>
+            <ul class="footer-contacts">
+              <p class="footer-item">Contacts</p>
+              <li>
+                <a class="link footer-address" href="tel:+86852346000"
+                  >+86 852 346 000</a
+                >
+              </li>
+              <li>
+                <a class="link footer-address" href="mailto:info@foodzero.com"
+                  >info@foodzero.com</a
+                >
+              </li>
+              <li>
+                <a
+                  class="link footer-address"
+                  href="https://maps.app.goo.gl/G3fx3dMrVu5tf39C7"
+                  >1959 Sepulveda Blvd. Culver City, CA, 90230</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer-form">
+            <p class="footer-item">Never Miss a Recipe</p>
+            <div class="subscribe-item">
+              <form class="subscribe-form">
+                <div class="footer-field">
+                  <label
+                    class="footer-label visually-hidden"
+                    for="user-email"
+                  ></label>
+                  <input
+                    class="footer-input"
+                    type="email"
+                    name="user-email"
+                    id="user-email"
+                    placeholder="Email Address"
+                  />
+                </div>
+              </form>
+              <button class="button-subscribe button" type="submit">
+                Subscibe
+              </button>
+            </div>
+            <p class="footer-inform">
+              Join our subscribers and get best recipe delivered each week!
+            </p>
+          </div>
+        </div>
+        <div class="footer-info">
+          <p class="footer-copyright">
+            &copy; 2020 Zero Inc. All rights Reserved
+          </p>
+          <address>
+            <ul class="address-social">
+              <li>
+                <a href="#">
+                  <svg class="address-icon" width="28" height="28">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg class="address-icon" width="28" height="22">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg class="address-icon" width="26" height="26">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg class="address-icon" width="28" height="22">
+                    <use href="./images/icons.svg#icon-youtube"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </address>
+        </div>
+      </div>
+    </footer>
+
+    <div class="modal is-hidden">
+      <div class="modal-window">
+        <button class="modal-btn-close" type="button">
+          <svg width="30" height="30">
+            <use href=".//images/modal-btn.svg"></use>
+          </svg>
+        </button>
+        <ul class="modal-link">
+          <li class="modal-item">
+            <a class="modal-link-text" href="./home.html">home</a>
+          </li>
+          <li class="modal-item">
+            <a class="modal-link-text" href="./menu.html">menu</a>
+          </li>
+          <li class="modal-item">
+            <a class="modal-link-text" href="./about.html">about</a>
+          </li>
+          <li class="modal-item">
+            <a class="modal-link-text" href="./contact.html">contact</a>
+          </li>
+        </ul>
+        <div class="modal-contact">
+          <ul class="footer-contacts">
+            <p class="modal-contact-title">Contact</p>
+            <li>
+              <a class="link modal-address" href="tel:+86852346000"
+                >+86 852 346 000</a
+              >
+            </li>
+            <li>
+              <a class="link modal-address" href="mailto:info@foodzero.com"
+                >info@foodzero.com</a
+              >
+            </li>
+            <li>
+              <a
+                class="link modal-address"
+                href="https://maps.app.goo.gl/G3fx3dMrVu5tf39C7"
+                >1959 Sepulveda Blvd. Culver City, CA, 90230</a
+              >
+            </li>
+          </ul>
+          <ul class="address-social">
+            <li>
+              <a href="#">
+                <svg class="address-icon" width="28" height="28">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg class="address-icon" width="28" height="22">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg class="address-icon" width="26" height="26">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg class="address-icon" width="28" height="22">
+                  <use href="./images/icons.svg#icon-youtube"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
+  </body>
+</html>

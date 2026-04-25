@@ -1,0 +1,38 @@
+.header-section {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 46px;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    justify-content: space-between;
+  }
+
+  &__nav {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+  }
+
+  &__contact {
+    display: flex;
+    gap: 26px;
+    align-items: center;
+  }
+
+  &__link {
+    color: var(--color-white-f);
+    font-family: inter sans-serif;
+    font-weight: 400;
+    font-size: 26px;
+    max-width: 230px;
+
+    &:hover {
+      color: var(--color-light-grey);
+    }
+  }
+}

@@ -1,0 +1,37 @@
+.address {
+  &__social {
+    display: flex;
+    gap: 28px;
+    justify-content: flex-end;
+  }
+
+  &__icon {
+    fill: var(--color-white-f);
+    width: 28px;
+    height: 28px;
+    transition:
+      transform 0.2s,
+      fill 0.2s;
+
+    &:hover {
+      fill: var(--color-brand-light);
+      transform: scale(1.2);
+    }
+  }
+
+  &__contacts {
+    max-width: 210px;
+    font-family: Lato, sans-serif;
+  }
+
+  &__link {
+    color: var(--color-white-f);
+    font-size: 18px;
+    font-weight: 400;
+    transition: color 0.3s;
+
+    &:hover {
+      color: var(--color-brand-light);
+    }
+  }
+}

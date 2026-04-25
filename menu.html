@@ -1,0 +1,388 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu</title>
+
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <header class="header-section">
+      <div class="container">
+        <div class="header-section__container">
+          <div class="header-section__nav">
+            <a href="./home.html">
+              <img src="./images/logo_f.svg" alt="Restaurant's logo" />
+            </a>
+            <button
+              class="header-section__btn-menu header-button-menu modal-btn-open'"
+              type="button"
+            >
+              <svg width="94" height="71">
+                <use href="./images/icons.svg#icon-nav-open"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="header-section__contact">
+            <address>
+              <a class="header-section__link link" href="tel:+86852346000">
+                +86 852 346 000
+              </a>
+            </address>
+            <button class="header-button button" type="button">
+              Reservations
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="hero-section">
+        <div class="container">
+          <h1 class="text-title hero-section__title--limited">
+            View Our New Menu
+          </h1>
+          <p class="text-medium">The freshest ingredients for you every day</p>
+        </div>
+      </section>
+      <section class="starters-section">
+        <div class="container">
+          <div class="text-centered">
+            <h2 class="text-topic">Starters</h2>
+            <p class="text-small starters-section__distance">
+              This is a section of your menu. Give your section a brief
+              description
+            </p>
+          </div>
+          <div class="section__container">
+            <img src="./images/menu_salad.jpg" alt="Vegetable Salad" />
+            <ul>
+              <li>
+                <p class="price">$20</p>
+                <h3 class="text-big dish-title">Grilled Okra and Tomatoes</h3>
+                <p class="text-small dish-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+              </li>
+              <li>
+                <p class="price">$18</p>
+                <h3 class="text-big dish-title">Cucumber Salad</h3>
+                <p class="text-small dish-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+              </li>
+              <li>
+                <p class="price">$12</p>
+                <h3 class="text-big dish-title">Basil Pancakes</h3>
+                <p class="text-small dish-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="mains-section">
+        <div class="container">
+          <div class="text-centered">
+            <h2 class="text-topic">Mains</h2>
+            <p class="text-small mains-inform">
+              This is a section of your menu. Give your section a brief
+              description
+            </p>
+          </div>
+          <div class="section__container">
+            <ul>
+              <li>
+                <p class="price">$20</p>
+                <h3 class="text-big dish-title">
+                  Deep Sea Snow White Cod Fillet
+                </h3>
+                <p class="text-small dish-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+              </li>
+              <li>
+                <p class="price">$22</p>
+                <h3 class="text-big dish-title">Steak With Rosemary Butter</h3>
+                <p class="text-small dish-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+              </li>
+              <li>
+                <p class="price">$20</p>
+                <h3 class="text-big dish-title">Steaks with Grilled Kimchi</h3>
+                <p class="text-small dish-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+              </li>
+            </ul>
+            <img src="./images/menu_cutlet.jpg" alt="Fried cutlet" />
+          </div>
+        </div>
+      </section>
+      <section class="drinks-section">
+        <div class="container">
+          <div class="text-centered">
+            <h2 class="text-topic">Pastries & Drinks</h2>
+            <p class="text-small drinks-inform">
+              This is a section of your menu. Give your section a brief
+              description
+            </p>
+          </div>
+          <div class="section__container">
+            <img src="./images/menu_drinks.jpg" alt="Drinks in clear glasses" />
+            <ul>
+              <li>
+                <p class="price">$158</p>
+                <h3 class="text-big dish-title">Wine Pairing</h3>
+                <p class="text-small dish-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+              </li>
+              <li>
+                <p class="price">$168</p>
+                <h3 class="text-big dish-title">Natural Wine Pairing</h3>
+                <p class="text-small dish-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+              </li>
+              <li>
+                <p class="price">$90</p>
+                <h3 class="text-big dish-title">Whisky Flyer</h3>
+                <p class="text-small dish-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="reservation-section">
+        <div class="container">
+          <h2 class="text-topic">Make a Reservation</h2>
+          <p class="text-small reservation-text">
+            Get in touch with restaurant
+          </p>
+          <form class="book-form">
+            <label class="visually-hidden" for="book-date">Date</label>
+            <input
+              class="book-select reservation-element"
+              type="date"
+              name="book-date"
+              id="book-date"
+            />
+
+            <label class="visually-hidden" for="book-time">Time</label>
+            <select
+              class="book-select reservation-element"
+              name="book-time"
+              id="book-time"
+            >
+              <option value="">1:00 pm</option>
+              <option value="">2:00 pm</option>
+              <option value="">3:00 pm</option>
+              <option value="">4:00 pm</option>
+              <option value="">5:00 pm</option>
+              <option value="">6:00 pm</option>
+              <option value="">7:00 pm</option>
+              <option value="">8:00 pm</option>
+              <option value="">9:00 pm</option>
+            </select>
+
+            <label class="visually-hidden" for="book-persons">Persons</label>
+            <select
+              class="book-select reservation-element"
+              type="date"
+              name="book-persons"
+              id="book-persons"
+            >
+              <option value="">1 person</option>
+              <option value="">2 person</option>
+              <option value="">3 person</option>
+              <option value="">4 person</option>
+              <option value="">5 person</option>
+              <option value="">6 person</option>
+            </select>
+          </form>
+          <button class="button-reservation button" type="submit">
+            Book now
+          </button>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-container-link">
+          <div class="footer-link">
+            <a class="footer-logo" href="/">
+              <h3 class="footer-title">Food Zero.</h3>
+            </a>
+            <ul class="footer-contacts">
+              <p class="footer-item">Contacts</p>
+              <li>
+                <a class="link footer-address" href="tel:+86852346000"
+                  >+86 852 346 000</a
+                >
+              </li>
+              <li>
+                <a class="link footer-address" href="mailto:info@foodzero.com"
+                  >info@foodzero.com</a
+                >
+              </li>
+              <li>
+                <a
+                  class="link footer-address"
+                  href="https://maps.app.goo.gl/G3fx3dMrVu5tf39C7"
+                  >1959 Sepulveda Blvd. Culver City, CA, 90230</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer-form">
+            <p class="footer-item">Never Miss a Recipe</p>
+            <div class="subscribe-item">
+              <form class="subscribe-form">
+                <div class="footer-field">
+                  <label
+                    class="footer-label visually-hidden"
+                    for="user-email"
+                  ></label>
+                  <input
+                    class="footer-input"
+                    type="email"
+                    name="user-email"
+                    id="user-email"
+                    placeholder="Email Address"
+                  />
+                </div>
+              </form>
+              <button class="button-subscribe button" type="submit">
+                Subscibe
+              </button>
+            </div>
+            <p class="footer-inform">
+              Join our subscribers and get best recipe delivered each week!
+            </p>
+          </div>
+        </div>
+        <div class="footer-info">
+          <p class="footer-copyright">
+            &copy; 2020 Zero Inc. All rights Reserved
+          </p>
+          <address>
+            <ul class="address-social">
+              <li>
+                <a href="#">
+                  <svg class="address-icon" width="28" height="28">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg class="address-icon" width="28" height="22">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg class="address-icon" width="26" height="26">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg class="address-icon" width="28" height="22">
+                    <use href="./images/icons.svg#icon-youtube"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </address>
+        </div>
+      </div>
+    </footer>
+
+    <div class="modal is-hidden">
+      <div class="modal-window">
+        <button class="modal-btn-close" type="button">
+          <svg width="30" height="30">
+            <use href=".//images/modal-btn.svg"></use>
+          </svg>
+        </button>
+        <ul class="modal-link">
+          <li class="modal-item">
+            <a class="modal-link-text" href="./home.html">home</a>
+          </li>
+          <li class="modal-item">
+            <a class="modal-link-text" href="./menu.html">menu</a>
+          </li>
+          <li class="modal-item">
+            <a class="modal-link-text" href="./about.html">about</a>
+          </li>
+          <li class="modal-item">
+            <a class="modal-link-text" href="./contact.html">contact</a>
+          </li>
+        </ul>
+        <div class="modal-contact">
+          <ul class="footer-contacts">
+            <p class="modal-contact-title">Contact</p>
+            <li>
+              <a class="link modal-address" href="tel:+86852346000"
+                >+86 852 346 000</a
+              >
+            </li>
+            <li>
+              <a class="link modal-address" href="mailto:info@foodzero.com"
+                >info@foodzero.com</a
+              >
+            </li>
+            <li>
+              <a
+                class="link modal-address"
+                href="https://maps.app.goo.gl/G3fx3dMrVu5tf39C7"
+                >1959 Sepulveda Blvd. Culver City, CA, 90230</a
+              >
+            </li>
+          </ul>
+          <ul class="address-social">
+            <li>
+              <a href="#">
+                <svg class="address-icon" width="28" height="28">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg class="address-icon" width="28" height="22">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg class="address-icon" width="26" height="26">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg class="address-icon" width="28" height="22">
+                  <use href="./images/icons.svg#icon-youtube"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
+  </body>
+</html>
