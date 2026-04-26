@@ -1,15 +1,58 @@
+@use '../utils/variables' as *;
+
 .reservation-section {
-  padding: 240px 0 250px 0;
+  padding: 240px 0 250px;
   background-color: var(--color-white-eb);
   text-align: center;
+
+  @media screen and (max-width: $bp-desktop) {
+    padding: 140px 0 150px 0;
+  }
+
+  @media screen and (max-width: $bp-desktop) {
+    padding: 60px 0 80px 0;
+  }
+
+  &__title {
+    @media screen and (max-width: $bp-tablet) {
+      font-size: 68px;
+    }
+
+    @media screen and (max-width: $bp-mobile) {
+      font-size: 48px;
+    }
+  }
 }
 
 .reservation-text {
   margin-bottom: 135px;
+
+  @media screen and (max-width: $bp-desktop) {
+    margin-bottom: 100px;
+  }
+
+  @media screen and (max-width: $bp-desktop) {
+    margin-bottom: 60px;
+  }
 }
 
 .book-form {
   margin-bottom: 135px;
+
+  @media screen and (max-width: $bp-desktop) {
+    margin-bottom: 100px;
+  }
+
+  @media screen and (max-width: $bp-tablet) {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 16px;
+  }
+
+  @media screen and (max-width: $bp-desktop) {
+    margin-bottom: 40px;
+  }
 }
 
 .reservation-element {
@@ -20,6 +63,16 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 1.4;
+
+  @media screen and (max-width: $bp-tablet) {
+    font-size: 18px;
+    padding: 20px 40px;
+  }
+
+  @media screen and (max-width: $bp-mobile) {
+    font-size: 14px;
+    padding: 16px 40px;
+  }
 }
 
 .reservation-element::placeholder {
@@ -45,4 +98,8 @@
 
 .book-select {
   width: 32%;
+
+  @media screen and (max-width: $bp-tablet) {
+    width: 100%;
+  }
 }

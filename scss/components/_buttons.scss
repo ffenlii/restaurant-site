@@ -57,6 +57,14 @@ button {
   background-color: var(--color-brand-dark);
   border-color: var(--color-black);
   padding: 20px 95px;
+
+  @media screen and (max-width: $bp-tablet) {
+    padding: 20px 64px;
+  }
+
+  @media screen and (max-width: $bp-tablet) {
+    padding: 10px 44px;
+  }
 }
 
 .button-reservation-light {
@@ -71,12 +79,15 @@ button {
 .bloger-button {
   background-color: var(--color-brand-normal);
   border: none;
-  width: 205px;
-  height: 64px;
+  line-height: 1.7;
   padding: 7px 53px;
   position: absolute;
   top: 12px;
   right: 12px;
+
+  @media screen and (max-width: $bp-tablet) {
+    padding: 2px 24px;
+  }
 }
 
 .button-subscribe {
@@ -92,6 +103,27 @@ button {
 .comment-button {
   border: none;
   transition: transform 0.3s;
+  padding: 0 14px;
+
+  &__icon {
+    width: 108px;
+    height: 24px;
+
+    @media screen and (max-width: $bp-desktop) {
+      width: 68px;
+      height: 34px;
+    }
+
+    @media screen and (max-width: $bp-tablet) {
+      width: 40px;
+      height: 20px;
+    }
+
+    @media screen and (max-width: $bp-mobile) {
+      width: 20px;
+      height: 10px;
+    }
+  }
 }
 
 .comment-button:hover {

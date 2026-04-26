@@ -1,9 +1,23 @@
+@use '../../utils/variables' as *;
+
 .comment-section {
   padding: 120px 0 145px 0;
   background-image: url('../images/comment-section-background.png');
   background-repeat: no-repeat;
   background-position-x: 1500px;
   background-position-y: 130px;
+
+  @media screen and (max-width: $bp-desktop) {
+    padding: 100px 0;
+  }
+
+  @media screen and (max-width: $bp-tablet) {
+    padding: 72px 0;
+  }
+
+  @media screen and (max-width: $bp-tablet) {
+    padding: 42px 0;
+  }
 
   &__container {
     display: flex;
@@ -16,8 +30,82 @@
     align-items: center;
   }
 
+  &__counter {
+    font-size: 16px;
+  }
+
   &__text {
     margin-bottom: 86px;
-    max-width: 1265px;
+    max-width: 85%;
+
+    @media screen and (max-width: $bp-desktop) {
+      font-size: 32px;
+      margin-bottom: 64px;
+    }
+
+    @media screen and (max-width: $bp-tablet) {
+      font-size: 24px;
+      margin-bottom: 44px;
+      max-width: 100%;
+    }
+
+    @media screen and (max-width: $bp-mobile) {
+      font-size: 16px;
+      margin-bottom: 24px;
+    }
+  }
+}
+
+.people-comment {
+  display: flex;
+  gap: 16px;
+
+  &__inform {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @media screen and (max-width: $bp-mobile) {
+      margin-bottom: 8px;
+    }
+  }
+
+  &__name {
+    font-size: 32px;
+
+    @media screen and (max-width: $bp-tablet) {
+      font-size: 24px;
+    }
+
+    @media screen and (max-width: $bp-mobile) {
+      font-size: 16px;
+    }
+  }
+
+  &__mark {
+    font-size: 18px;
+
+    @media screen and (max-width: $bp-tablet) {
+      font-size: 16px;
+    }
+
+    @media screen and (max-width: $bp-mobile) {
+      font-size: 10px;
+    }
+  }
+
+  &__photo {
+    width: 164px;
+    height: 164px;
+
+    @media screen and (max-width: $bp-tablet) {
+      width: 88px;
+      height: 88px;
+    }
+
+    @media screen and (max-width: $bp-mobile) {
+      width: 48px;
+      height: 48px;
+    }
   }
 }

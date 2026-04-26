@@ -1,10 +1,44 @@
+@use '../../utils/variables' as *;
+
 .blogers-section {
   padding: 130px 0 100px 0;
 
+  @media screen and (max-width: $bp-desktop) {
+    padding-top: 80px;
+  }
+
+  @media screen and (max-width: $bp-tablet) {
+    padding: 40px 0;
+  }
+
   &__list {
     display: flex;
-    gap: 40px;
+    gap: 20px;
     justify-content: space-between;
+
+    @media screen and (max-width: $bp-mobile) {
+      gap: 40px;
+      flex-direction: column;
+    }
+  }
+
+  &__photo {
+    width: 84px;
+
+    @media screen and (max-width: $bp-tablet) {
+      width: 54px;
+    }
+
+    @media screen and (max-width: $bp-mobile) {
+      width: 44px;
+    }
+  }
+
+  &__image {
+    display: flex;
+    flex-shrink: 1;
+    min-width: 0;
+    max-width: 100%;
   }
 
   &__inform {
@@ -15,6 +49,14 @@
     font-size: 18px;
     margin-bottom: 48px;
 
+    @media screen and (max-width: $bp-desktop) {
+      margin-bottom: 24px;
+    }
+
+    @media screen and (max-width: $bp-tablet) {
+      margin-bottom: 0;
+    }
+
     li:not(:first-child) {
       list-style-type: disc;
     }
@@ -24,17 +66,49 @@
     display: flex;
     gap: 32px;
     align-items: center;
+
+    &--hidden {
+      @media screen and (max-width: $bp-desktop) {
+        display: none;
+      }
+    }
+
+    &--hidden-late {
+      @media screen and (max-width: $bp-tablet) {
+        display: none;
+      }
+    }
+
+    &--distance {
+      @media screen and (max-width: $bp-tablet) {
+        margin: 0;
+      }
+    }
   }
 
   &__item {
     margin-bottom: 68px;
     position: relative;
+
+    @media screen and (max-width: $bp-desktop) {
+      margin-bottom: 28px;
+    }
+
+    @media screen and (max-width: $bp-tablet) {
+      margin-bottom: 8px;
+    }
   }
 
   &__comment {
     margin-bottom: 18px;
     padding-bottom: 18px;
     border-bottom: 4px dashed var(--color-black);
+
+    @media screen and (max-width: $bp-tablet) {
+      margin-bottom: 8px;
+      padding-bottom: 8px;
+      border-bottom: 2px dashed var(--color-black);
+    }
   }
 
   &__link {
@@ -48,7 +122,14 @@
   }
 
   &__arrow {
+    width: 48px;
+    height: 24px;
     fill: var(--color-brand-normal);
+
+    @media screen and (max-width: $bp-tablet) {
+      width: 28px;
+      height: 14px;
+    }
 
     &:hover {
       fill: var(--color-brand-normal);

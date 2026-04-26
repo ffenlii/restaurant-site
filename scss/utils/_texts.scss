@@ -20,6 +20,14 @@
   }
 }
 
+.text-normal {
+  font-size: 32px;
+
+  @media screen and (max-width: $bp-tablet) {
+    font-size: 20px;
+  }
+}
+
 .text-topic {
   font-size: 108px;
 }

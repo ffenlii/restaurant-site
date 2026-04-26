@@ -1,18 +1,70 @@
+@use '../../utils/variables' as *;
+
 .exellent-section {
   position: relative;
   padding-top: 220px;
   background-color: var(--color-white-eb);
   z-index: -2;
 
+  &__text {
+    @media screen and (max-width: $bp-tablet) {
+      font-size: 14px;
+    }
+
+    @media screen and (max-width: $bp-tablet) {
+      font-size: 12px;
+    }
+  }
+
+  @media screen and (max-width: $bp-desktop) {
+    padding-top: 120px;
+  }
+
+  @media screen and (max-width: $bp-tablet) {
+    padding-top: 60px;
+  }
+
+  @media screen and (max-width: $bp-tablet) {
+    padding-top: 40px;
+  }
+
   &__container {
     display: flex;
     gap: 40px;
     justify-content: space-between;
+
+    @media screen and (max-width: $bp-desktop) {
+      gap: 20px;
+    }
+
+    @media screen and (max-width: $bp-tablet) {
+      gap: 10px;
+      flex-direction: column-reverse;
+    }
+
+    @media screen and (max-width: $bp-tablet) {
+    }
+  }
+
+  &__title {
+    @media screen and (max-width: $bp-desktop) {
+      font-size: 62px;
+    }
+
+    @media screen and (max-width: $bp-tablet) {
+      font-size: 48px;
+    }
+
+    @media screen and (max-width: $bp-mobile) {
+      font-size: 32px;
+    }
   }
 
   &__image {
-    max-width: 935px;
-    width: 100%;
+    display: flex;
+    flex-shrink: 1;
+    min-width: 0;
+    max-width: 100%;
   }
 
   &__small-decorate {
@@ -20,11 +72,25 @@
     top: 100px;
     left: 50px;
     z-index: -1;
+
+    @media screen and (max-width: $bp-desktop) {
+      width: 240px;
+      top: 40px;
+    }
+
+    @media screen and (max-width: $bp-desktop) {
+      display: none;
+    }
   }
 
   &__big-decorate {
     position: absolute;
     bottom: 20px;
     right: 100px;
+    width: 360px;
+
+    @media screen and (max-width: $bp-desktop) {
+      display: none;
+    }
   }
 }
