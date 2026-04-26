@@ -8,29 +8,33 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <header class="header-section">
+    <header class="header">
       <div class="container">
-        <div class="header-section__container">
-          <div class="header-section__nav">
+        <div class="header__container">
+          <div class="header__nav">
             <a href="./home.html">
-              <img src="./images/logo_f.svg" alt="Restaurant's logo" />
+              <img
+                class="header__logo"
+                src="./images/logo_f.svg"
+                alt="Restaurant's logo"
+              />
             </a>
             <button
-              class="header-section__btn-menu header-button-menu modal-btn-open'"
+              class="header__btn-burger header-button-burger modal-btn-open'"
               type="button"
             >
-              <svg width="94" height="71">
+              <svg class="header__burger-icon">
                 <use href="./images/icons.svg#icon-nav-open"></use>
               </svg>
             </button>
           </div>
-          <div class="header-section__contact">
+          <div class="header__contact">
             <address>
-              <a class="header-section__link link" href="tel:+86852346000">
+              <a class="header__link link" href="tel:+86852346000">
                 +86 852 346 000
               </a>
             </address>
-            <button class="header-button button" type="button">
+            <button class="header__button-reserv button" type="button">
               Reservations
             </button>
           </div>
@@ -48,33 +52,42 @@
           <h1 class="text-title hero-section__title--limited">
             Healthy Eating is important part of lifestyle
           </h1>
-          <p class="text-small text-limited">
+          <p class="hero-section__text text-small text-limited">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque
             congue arcu
           </p>
-          <p>Scroll--------------</p>
           <img
             class="hero-section__decorate"
             src="./images/plates-with-spices.png"
             alt="Plates with spices"
           />
           <ul class="hero-section__underside">
-            <li>
-              <img src="./images/soup.jpg" alt="Soup in a plate" />
-              <div class="text-limited">
-                <h2 class="text-big">Start to plan your diet today</h2>
+            <li class="hero-section__underside-item">
+              <img
+                class="hero-section__image-soup"
+                src="./images/soup.jpg"
+                alt="Soup in a plate"
+              />
+              <div class="hero-section__text-capture text-limited">
+                <h2 class="hero-section__underside-title text-big">
+                  Start to plan your diet today
+                </h2>
                 <p class="text-small text-limited">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque
                   congue arcu
                 </p>
               </div>
             </li>
-            <li>
-              <p class="text-small hero-section__text-distanse">
+            <li class="hero-section__underside-item">
+              <p class="text-small text-limited hero-section__text-distanse">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque
                 congue arcu
               </p>
-              <img src="./images/jar.jpg" alt="Spice jars" />
+              <img
+                class="hero-section__image-jar"
+                src="./images/jar.jpg"
+                alt="Spice jars"
+              />
             </li>
           </ul>
         </div>
@@ -82,15 +95,15 @@
       <section class="menu-section">
         <div class="container">
           <h2 class="section__title">Our Menu</h2>
-          <p class="text-small text-limited menu-section__title">
+          <p class="menu-section__title text-small text-limited">
             This is a section of your menu. Give your section a brief
             description
           </p>
           <div>
-            <ul class="dish__list">
+            <ul class="dish">
               <li class="dish__item">
                 <p class="dish__price dish__distance">$20</p>
-                <h3 class="text-big dish__distance">
+                <h3 class="dish__title dish__distance">
                   Deep Sea Snow White Cod Fillet
                 </h3>
                 <p class="text-small">
@@ -99,7 +112,7 @@
               </li>
               <li class="dish__item">
                 <p class="dish__price">$22</p>
-                <h3 class="text-big dish__distance">
+                <h3 class="dish__title dish__distance">
                   Steak With Rosemary Butter
                 </h3>
                 <p class="text-small">
@@ -108,14 +121,14 @@
               </li>
               <li class="dish__item">
                 <p class="dish__price">$18</p>
-                <h3 class="text-big dish__distance">Cucumber Salad</h3>
+                <h3 class="dish__title dish__distance">Cucumber Salad</h3>
                 <p class="text-small">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </p>
               </li>
               <li class="dish__item">
                 <p class="dish__price">$90</p>
-                <h3 class="text-big dish__distance">Natural Wine Pairing</h3>
+                <h3 class="dish__title dish__distance">Natural Wine Pairing</h3>
                 <p class="text-small">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </p>

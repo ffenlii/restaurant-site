@@ -2,7 +2,7 @@
 const modal = document.querySelector('.modal');
 
 // 2. Шукаємо кнопку відкриття (я прибрав зайву лапку з вашого прикладу)
-const modalBtnOpen = document.querySelector('.header-button-menu');
+const modalBtnOpen = document.querySelector('.header-button-burger');
 
 // 3. Створюємо функцію (is-hidden — це гарний вибір назви класу)
 const toggleModal = () => modal.classList.toggle('is-hidden');

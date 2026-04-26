@@ -1,27 +1,68 @@
-.header-section {
+@use '../utils/variables' as *;
+
+.header {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   padding-top: 46px;
 
+  @media screen and (max-width: $bp-tablet) {
+    padding-top: 24px;
+  }
+
   &__container {
     display: flex;
     align-items: center;
     gap: 40px;
     justify-content: space-between;
+
+    @media screen and (max-width: $bp-tablet) {
+      gap: 0;
+    }
   }
 
   &__nav {
     display: flex;
     gap: 40px;
     align-items: center;
+
+    @media screen and (max-width: $bp-tablet) {
+      gap: 20px;
+    }
+
+    @media screen and (max-width: $bp-mobile) {
+      flex-grow: 1;
+      justify-content: space-between;
+    }
+  }
+
+  &__logo {
+    @media screen and (max-width: $bp-desktop) {
+      width: 200px;
+    }
+
+    @media screen and (max-width: $bp-tablet) {
+      width: 160px;
+    }
+
+    @media screen and (max-width: $bp-mobile) {
+      width: 140px;
+    }
   }
 
   &__contact {
     display: flex;
     gap: 26px;
     align-items: center;
+
+    @media screen and (max-width: $bp-desktop) {
+      gap: 0;
+    }
+
+    @media screen and (max-width: $bp-mobile) {
+      display: none;
+    }
   }
 
   &__link {
@@ -33,6 +74,20 @@
 
     &:hover {
       color: var(--color-light-grey);
+    }
+
+    @media screen and (max-width: $bp-desktop) {
+      display: none;
+    }
+  }
+
+  &__burger-icon {
+    width: 74px;
+    height: 61px;
+
+    @media screen and (max-width: $bp-tablet) {
+      width: 54px;
+      height: 51px;
     }
   }
 }

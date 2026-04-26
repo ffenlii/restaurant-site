@@ -1,3 +1,5 @@
+@use '../utils/variables' as *;
+
 button {
   font-size: 32px;
   color: var(--color-white-f);
@@ -13,9 +15,21 @@ button {
   &:hover {
     transform: scale(1.1);
   }
+
+  @media screen and (max-width: $bp-desktop) {
+    font-size: 24px;
+    padding: 16px 36px;
+    transform: scale(1.05);
+  }
+
+  @media screen and (max-width: $bp-tablet) {
+    font-size: 16px;
+    padding: 14px 24px;
+    transform: scale(1.03);
+  }
 }
 
-.header-button {
+.header__button-reserv {
   border-color: var(--color-white-f);
   font-family: 'Rufina', serif;
 
@@ -25,17 +39,17 @@ button {
   }
 }
 
-.header-section__btn-menu {
+.header__btn-burger {
   flex-shrink: 0;
   padding: 0;
   border: none;
   /* Тому, що іконка лініями */
   stroke: var(--color-white-f);
-  width: 94px;
-  height: 71px;
+  width: 74px;
+  height: 61px;
 }
 
-.header-section__btn-menu:hover {
+.header__btn-burger:hover {
   stroke: var(--color-light-grey);
 }
 

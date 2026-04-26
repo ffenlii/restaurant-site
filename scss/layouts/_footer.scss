@@ -66,10 +66,10 @@
 
 .footer-address {
   margin-bottom: 20px;
-}
 
-.footer-address:hover {
-  color: var(--color-brand-light);
+  &:hover {
+    color: var(--color-brand-light);
+  }
 }
 
 .footer-field {
@@ -86,24 +86,20 @@
   font-size: 24px;
   line-height: 1.4;
   color: var(--color-white-f);
-}
 
-.footer-input:focus {
-  border-color: var(--color-brand-normal);
-  outline: none;
-}
+  &:focus {
+    border-color: var(--color-brand-normal);
+    outline: none;
+  }
 
-.footer-input::placeholder {
-  color: var(--color-white-f);
-  font-size: 24px;
-  line-height: 1.4;
-  font-family: Lato, sans-serif;
-}
+  &::placeholder {
+    color: var(--color-white-f);
+    font-size: 24px;
+    line-height: 1.4;
+    font-family: Lato, sans-serif;
+  }
 
-.footer-input:focus::placeholder {
-  color: var(--color-white-f);
-}
-
-.footer-input:focus::placeholder {
-  color: var(--color-white-f);
+  &:focus::placeholder {
+    color: var(--color-white-f);
+  }
 }

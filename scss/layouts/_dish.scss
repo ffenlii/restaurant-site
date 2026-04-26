@@ -1,8 +1,21 @@
+@use '../utils/variables' as *;
+
 .dish {
-  &__list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+
+  @media screen and (max-width: $bp-desktop) {
+    gap: 32px;
+  }
+
+  @media screen and (max-width: $bp-tablet) {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  @media screen and (max-width: $bp-tablet) {
+    gap: 14px;
   }
 
   &__item {
@@ -12,9 +25,38 @@
   &__price {
     border-bottom: 4px dashed var(--color-black);
     text-align: right;
+    margin-bottom: 24px;
+
+    @media screen and (max-width: $bp-desktop) {
+      font-size: 42px;
+    }
+
+    @media screen and (max-width: $bp-tablet) {
+      font-size: 32px;
+      margin-bottom: 16px;
+    }
+
+    @media screen and (max-width: $bp-mobile) {
+      font-size: 28px;
+      margin-bottom: 12px;
+    }
   }
 
-  &__distance {
+  &__title {
+    font-size: 68px;
     margin-bottom: 24px;
+
+    @media screen and (max-width: $bp-desktop) {
+      font-size: 40px;
+    }
+
+    @media screen and (max-width: $bp-tablet) {
+      font-size: 34px;
+      margin-bottom: 16px;
+    }
+
+    @media screen and (max-width: $bp-mobile) {
+      font-size: 24px;
+    }
   }
 }

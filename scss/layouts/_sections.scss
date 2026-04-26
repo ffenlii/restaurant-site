@@ -1,7 +1,22 @@
+@use '../utils/variables' as *;
+
 .section {
   &__container {
     display: flex;
     gap: 50px;
     justify-content: space-between;
+  }
+
+  &__title {
+    font-size: 108px;
+    margin-bottom: 18px;
+
+    @media screen and (max-width: $bp-tablet) {
+      font-size: 84px;
+    }
+
+    @media screen and (max-width: $bp-mobile) {
+      font-size: 52px;
+    }
   }
 }
