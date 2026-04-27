@@ -1,11 +1,54 @@
+@use '../../utils/variables' as *;
+
 .drinks-section {
   padding: 190px 0 210px 0;
   background-image: url('../images/background-avocado.png');
   background-repeat: no-repeat;
   background-position: center top;
   background-size: 350px 415px;
+
+  @media screen and (max-width: $bp-desktop) {
+    padding: 80px 0 120px 0;
+  }
+
+  @media screen and (max-width: $bp-tablet) {
+    padding: 0 0 80px 0;
+    background-size: 300px 280px;
+  }
+
+  @media screen and (max-width: $bp-tablet) {
+    background-size: 200px 180px;
+  }
+
+  &__title {
+    @media screen and (max-width: $bp-tablet) {
+      margin-bottom: 32px;
+    }
+  }
+
+  &__container {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+
+    @media screen and (max-width: $bp-mobile) {
+      flex-direction: column;
+    }
+  }
 }
 
 .drinks-inform {
   margin-bottom: 160px;
+
+  @media screen and (max-width: $bp-desktop) {
+    margin-bottom: 80px;
+  }
+
+  @media screen and (max-width: $bp-tablet) {
+    margin-bottom: 60px;
+  }
+
+  @media screen and (max-width: $bp-tablet) {
+    margin-bottom: 40px;
+  }
 }

@@ -1,3 +1,5 @@
+@use '../../utils/variables' as *;
+
 .hero-menu-section {
   background-image: url('../images/menu-hero-section.jpg');
   background-repeat: no-repeat;
@@ -5,6 +7,18 @@
   background-position: center;
   padding: 350px 0 330px 0;
   color: var(--color-white-f);
+
+  @media screen and (max-width: $bp-desktop) {
+    padding: 280px 0 230px 0;
+  }
+
+  @media screen and (max-width: $bp-tablet) {
+    padding: 220px 0 130px 0;
+  }
+
+  @media screen and (max-width: $bp-mobile) {
+    padding: 140px 0;
+  }
 
   &__title--limited {
     max-width: 780px;

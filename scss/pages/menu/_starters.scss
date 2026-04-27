@@ -1,3 +1,5 @@
+@use '../../utils/variables' as *;
+
 .starters-section {
   padding: 120px 0 140px 0;
   background-image: url('../images/starters-bluebbery.png');
@@ -5,7 +7,42 @@
   background-position: right top;
   background-size: 515px 440px;
 
+  @media screen and (max-width: $bp-desktop) {
+    padding: 100px 0 120px 0;
+    background-size: 390px 320px;
+  }
+
+  @media screen and (max-width: $bp-tablet) {
+    background-size: 280px 240px;
+    padding: 60px 0;
+  }
+
+  @media screen and (max-width: $bp-mobile) {
+    background-size: 120px 100px;
+    padding: 40px 0;
+  }
+
+  &__container {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+
+    @media screen and (max-width: $bp-mobile) {
+      flex-direction: column;
+    }
+  }
+
   &__inform {
     margin-bottom: 80px;
+  }
+
+  &__title {
+    @media screen and (max-width: $bp-tablet) {
+      margin-bottom: 62px;
+    }
+
+    @media screen and (max-width: $bp-mobile) {
+      margin-bottom: 32px;
+    }
   }
 }

@@ -30,6 +30,14 @@
 
 .text-topic {
   font-size: 108px;
+
+  @media screen and (max-width: $bp-tablet) {
+    font-size: 88px;
+  }
+
+  @media screen and (max-width: $bp-mobile) {
+    font-size: 48px;
+  }
 }
 
 .text-big {
@@ -50,6 +58,14 @@
 
 .text-medium {
   font-size: 32px;
+
+  @media screen and (max-width: $bp-tablet) {
+    font-size: 16px;
+  }
+
+  @media screen and (max-width: $bp-mobile) {
+    font-size: 14px;
+  }
 }
 
 .text-small {

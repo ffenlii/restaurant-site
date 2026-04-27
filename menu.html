@@ -8,29 +8,33 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <header class="header-section">
+    <header class="header">
       <div class="container">
-        <div class="header-section__container">
-          <div class="header-section__nav">
-            <a href="./home.html">
-              <img src="./images/logo_f.svg" alt="Restaurant's logo" />
+        <div class="header__container">
+          <div class="header__nav">
+            <a href="./index.html">
+              <img
+                class="header__logo"
+                src="./images/logo_f.svg"
+                alt="Restaurant's logo"
+              />
             </a>
             <button
-              class="header-section__btn-menu header-button-menu modal-btn-open'"
+              class="header__btn-burger header-button-burger modal-btn-open'"
               type="button"
             >
-              <svg width="94" height="71">
+              <svg class="header__burger-icon">
                 <use href="./images/icons.svg#icon-nav-open"></use>
               </svg>
             </button>
           </div>
-          <div class="header-section__contact">
+          <div class="header__contact">
             <address>
-              <a class="header-section__link link" href="tel:+86852346000">
+              <a class="header__link link" href="tel:+86852346000">
                 +86 852 346 000
               </a>
             </address>
-            <button class="header-button button" type="button">
+            <button class="header__button-reserv button" type="button">
               Reservations
             </button>
           </div>
@@ -38,7 +42,7 @@
       </div>
     </header>
     <main>
-      <section class="hero-section">
+      <section class="hero-menu-section">
         <div class="container">
           <h1 class="text-title hero-section__title--limited">
             View Our New Menu
@@ -49,33 +53,37 @@
       <section class="starters-section" id="starters-section">
         <div class="container">
           <div class="text-centered">
-            <h2 class="text-topic">Starters</h2>
+            <h2 class="starters-section__title text-topic">Starters</h2>
             <p class="text-small starters-section__distance">
               This is a section of your menu. Give your section a brief
               description
             </p>
           </div>
-          <div class="section__container">
-            <img src="./images/menu_salad.jpg" alt="Vegetable Salad" />
+          <div class="starters-section__container">
+            <img
+              class="section__image"
+              src="./images/menu_salad.jpg"
+              alt="Vegetable Salad"
+            />
             <ul>
               <li>
-                <p class="price">$20</p>
-                <h3 class="text-big dish-title">Grilled Okra and Tomatoes</h3>
-                <p class="text-small dish-text">
+                <p class="dish__price">$20</p>
+                <h3 class="text-big dish__title">Grilled Okra and Tomatoes</h3>
+                <p class="text-small">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </p>
               </li>
               <li>
-                <p class="price">$18</p>
-                <h3 class="text-big dish-title">Cucumber Salad</h3>
-                <p class="text-small dish-text">
+                <p class="dish__price">$18</p>
+                <h3 class="text-big dish__title">Cucumber Salad</h3>
+                <p class="text-small">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </p>
               </li>
               <li>
-                <p class="price">$12</p>
-                <h3 class="text-big dish-title">Basil Pancakes</h3>
-                <p class="text-small dish-text">
+                <p class="dish__price">$12</p>
+                <h3 class="text-big dish__title">Basil Pancakes</h3>
+                <p class="text-small">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </p>
               </li>
@@ -86,72 +94,80 @@
       <section class="mains-section" id="mains-section">
         <div class="container">
           <div class="text-centered">
-            <h2 class="text-topic">Mains</h2>
+            <h2 class="section__title--distance text-topic">Mains</h2>
             <p class="text-small mains-inform">
               This is a section of your menu. Give your section a brief
               description
             </p>
           </div>
-          <div class="section__container">
+          <div class="mains-section__container">
             <ul>
               <li>
-                <p class="price">$20</p>
-                <h3 class="text-big dish-title">
+                <p class="dish__price">$20</p>
+                <h3 class="text-big dish__title">
                   Deep Sea Snow White Cod Fillet
                 </h3>
-                <p class="text-small dish-text">
+                <p class="text-small">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </p>
               </li>
               <li>
-                <p class="price">$22</p>
-                <h3 class="text-big dish-title">Steak With Rosemary Butter</h3>
-                <p class="text-small dish-text">
+                <p class="dish__price">$22</p>
+                <h3 class="text-big dish__title">Steak With Rosemary Butter</h3>
+                <p class="text-small">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </p>
               </li>
               <li>
-                <p class="price">$20</p>
-                <h3 class="text-big dish-title">Steaks with Grilled Kimchi</h3>
-                <p class="text-small dish-text">
+                <p class="dish__price">$20</p>
+                <h3 class="text-big dish__title">Steaks with Grilled Kimchi</h3>
+                <p class="text-small">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </p>
               </li>
             </ul>
-            <img src="./images/menu_cutlet.jpg" alt="Fried cutlet" />
+            <img
+              class="section__image"
+              src="./images/menu_cutlet.jpg"
+              alt="Fried cutlet"
+            />
           </div>
         </div>
       </section>
       <section class="drinks-section" id="drinks-section">
         <div class="container">
           <div class="text-centered">
-            <h2 class="text-topic">Pastries & Drinks</h2>
+            <h2 class="drinks-section__title text-topic">Pastries & Drinks</h2>
             <p class="text-small drinks-inform">
               This is a section of your menu. Give your section a brief
               description
             </p>
           </div>
-          <div class="section__container">
-            <img src="./images/menu_drinks.jpg" alt="Drinks in clear glasses" />
+          <div class="drinks-section__container">
+            <img
+              class="section__image"
+              src="./images/menu_drinks.jpg"
+              alt="Drinks in clear glasses"
+            />
             <ul>
               <li>
-                <p class="price">$158</p>
-                <h3 class="text-big dish-title">Wine Pairing</h3>
-                <p class="text-small dish-text">
+                <p class="dish__price">$158</p>
+                <h3 class="text-big dish__title">Wine Pairing</h3>
+                <p class="text-small">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </p>
               </li>
               <li>
-                <p class="price">$168</p>
-                <h3 class="text-big dish-title">Natural Wine Pairing</h3>
-                <p class="text-small dish-text">
+                <p class="dish__price">$168</p>
+                <h3 class="text-big dish__title">Natural Wine Pairing</h3>
+                <p class="text-small">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </p>
               </li>
               <li>
-                <p class="price">$90</p>
-                <h3 class="text-big dish-title">Whisky Flyer</h3>
-                <p class="text-small dish-text">
+                <p class="dish__price">$90</p>
+                <h3 class="text-big dish__title">Whisky Flyer</h3>
+                <p class="text-small">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </p>
               </li>
@@ -214,34 +230,34 @@
     </main>
     <footer class="footer">
       <div class="container">
-        <div class="footer-container-link">
-          <div class="footer-link">
-            <a class="footer-logo" href="/">
-              <h3 class="footer-title">Food Zero.</h3>
+        <div class="footer__container">
+          <div class="footer__link">
+            <a class="footer__logo" href="./home.html">
+              <h3 class="footer__title">Food Zero.</h3>
             </a>
-            <ul class="footer-contacts">
-              <p class="footer-item">Contacts</p>
+            <ul class="address__contacts">
+              <p class="footer__item">Contacts</p>
               <li>
-                <a class="link footer-address" href="tel:+86852346000"
+                <a class="link address__link" href="tel:+86852346000"
                   >+86 852 346 000</a
                 >
               </li>
               <li>
-                <a class="link footer-address" href="mailto:info@foodzero.com"
+                <a class="link address__link" href="mailto:info@foodzero.com"
                   >info@foodzero.com</a
                 >
               </li>
               <li>
                 <a
-                  class="link footer-address"
+                  class="link address__link"
                   href="https://maps.app.goo.gl/G3fx3dMrVu5tf39C7"
                   >1959 Sepulveda Blvd. Culver City, CA, 90230</a
                 >
               </li>
             </ul>
           </div>
-          <div class="footer-form">
-            <p class="footer-item">Never Miss a Recipe</p>
+          <div class="footer__form">
+            <p class="footer__form-item">Never Miss a Recipe</p>
             <div class="subscribe-item">
               <form class="subscribe-form">
                 <div class="footer-field">
@@ -262,41 +278,41 @@
                 Subscibe
               </button>
             </div>
-            <p class="footer-inform">
+            <p class="footer__inform">
               Join our subscribers and get best recipe delivered each week!
             </p>
           </div>
         </div>
-        <div class="footer-info">
-          <p class="footer-copyright">
+        <div class="footer__info">
+          <p class="footer__copyright">
             &copy; 2020 Zero Inc. All rights Reserved
           </p>
           <address>
-            <ul class="address-social">
+            <ul class="address__social">
               <li>
                 <a href="#">
-                  <svg class="address-icon" width="28" height="28">
+                  <svg class="address__icon" width="28" height="28">
                     <use href="./images/icons.svg#icon-instagram"></use>
                   </svg>
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <svg class="address-icon" width="28" height="22">
+                  <svg class="address__icon" width="28" height="22">
                     <use href="./images/icons.svg#icon-twitter"></use>
                   </svg>
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <svg class="address-icon" width="26" height="26">
+                  <svg class="address__icon" width="26" height="26">
                     <use href="./images/icons.svg#icon-facebook"></use>
                   </svg>
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <svg class="address-icon" width="28" height="22">
+                  <svg class="address__icon" width="28" height="22">
                     <use href="./images/icons.svg#icon-youtube"></use>
                   </svg>
                 </a>
@@ -308,72 +324,72 @@
     </footer>
 
     <div class="modal is-hidden">
-      <div class="modal-window">
+      <div class="modal__window">
         <button class="modal-btn-close" type="button">
-          <svg width="30" height="30">
-            <use href=".//images/modal-btn.svg"></use>
+          <svg class="test">
+            <use class="modal__btn-icon" href=".//images/modal-btn.svg"></use>
           </svg>
         </button>
-        <ul class="modal-link">
-          <li class="modal-item">
-            <a class="modal-link-text" href="./home.html">home</a>
+        <ul class="modal__link">
+          <li class="modal__item">
+            <a class="modal__text" href="./index.html">home</a>
           </li>
-          <li class="modal-item">
-            <a class="modal-link-text" href="./menu.html">menu</a>
+          <li class="modal__item">
+            <a class="modal__text" href="./menu.html">menu</a>
           </li>
-          <li class="modal-item">
-            <a class="modal-link-text" href="./about.html">about</a>
+          <li class="modal__item">
+            <a class="modal__text" href="./about.html">about</a>
           </li>
-          <li class="modal-item">
-            <a class="modal-link-text" href="./contact.html">contact</a>
+          <li class="modal__item">
+            <a class="modal__text" href="./contact.html">contact</a>
           </li>
         </ul>
         <div class="modal-contact">
-          <ul class="footer-contacts">
-            <p class="modal-contact-title">Contact</p>
+          <ul class="address__contacts">
+            <p class="modal__contact-title">Contact</p>
             <li>
-              <a class="link modal-address" href="tel:+86852346000"
+              <a class="link address__link" href="tel:+86852346000"
                 >+86 852 346 000</a
               >
             </li>
             <li>
-              <a class="link modal-address" href="mailto:info@foodzero.com"
+              <a class="link address__link" href="mailto:info@foodzero.com"
                 >info@foodzero.com</a
               >
             </li>
             <li>
               <a
-                class="link modal-address"
+                class="link address__link"
                 href="https://maps.app.goo.gl/G3fx3dMrVu5tf39C7"
                 >1959 Sepulveda Blvd. Culver City, CA, 90230</a
               >
             </li>
           </ul>
-          <ul class="address-social">
+          <ul class="address__social">
             <li>
               <a href="#">
-                <svg class="address-icon" width="28" height="28">
+                <svg class="address__icon">
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
             <li>
               <a href="#">
-                <svg class="address-icon" width="28" height="22">
+                <svg class="address__icon">
                   <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
             <li>
               <a href="#">
-                <svg class="address-icon" width="26" height="26">
+                <svg class="address__icon">
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li>
               <a href="#">
-                <svg class="address-icon" width="28" height="22">
+                <svg class="address__icon">
                   <use href="./images/icons.svg#icon-youtube"></use>
                 </svg>
               </a>
