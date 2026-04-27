@@ -142,6 +142,12 @@ button {
   width: 85px;
   height: 65px;
   fill: var(--color-black);
+  padding: 0;
+
+  @media screen and (max-width: $bp-mobile) {
+    top: 10px;
+    left: 10px;
+  }
 }
 
 .modal-btn-close:hover {

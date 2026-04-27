@@ -1,14 +1,33 @@
+@use '../utils/variables' as *;
+
 .footer {
   color: var(--color-white-f);
   background-color: var(--color-brand-dark);
   padding: 135px 0 75px 0;
 
+  @media screen and (max-width: $bp-desktop) {
+    padding: 80px 0 75px;
+  }
+
+  @media screen and (max-width: $bp-tablet) {
+    padding-top: 40px;
+  }
+
   &__container {
-    margin-bottom: 195px;
+    margin-bottom: 96px;
     display: flex;
     align-items: center;
     gap: 40px;
     justify-content: space-between;
+
+    @media screen and (max-width: $bp-tablet) {
+      flex-direction: column;
+      margin-bottom: 24px;
+    }
+
+    @media screen and (max-width: $bp-mobile) {
+      gap: 30px;
+    }
   }
 
   &__link {
@@ -17,25 +36,80 @@
     justify-content: flex-start;
     max-width: 640px;
     flex-grow: 1;
+    position: relative;
+
+    @media screen and (max-width: $bp-desktop) {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    @media screen and (max-width: $bp-tablet) {
+      gap: 0;
+    }
   }
 
   &__title {
     font-size: 68px;
     max-width: 188px;
     color: var(--color-white-f);
+
+    @media screen and (max-width: $bp-tablet) {
+      max-width: none;
+      margin-bottom: 32px;
+    }
+
+    @media screen and (max-width: $bp-mobile) {
+      font-size: 48px;
+    }
   }
 
   &__item {
     font-size: 32px;
     margin-bottom: 55px;
+
+    @media screen and (max-width: $bp-desktop) {
+      margin-bottom: 0;
+    }
+
+    @media screen and (max-width: $bp-tablet) {
+      font-size: 24px;
+    }
+
+    @media screen and (max-width: $bp-tablet) {
+      font-size: 18px;
+    }
   }
 
   &__form {
     flex-basis: 50%;
   }
 
+  &__form-item {
+    margin-bottom: 55px;
+
+    @media screen and (max-width: $bp-desktop) {
+      margin-bottom: 32px;
+    }
+
+    @media screen and (max-width: $bp-tablet) {
+      font-size: 34px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    @media screen and (max-width: $bp-mobile) {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+  }
+
   &__inform {
     font-size: 14px;
+
+    @media screen and (max-width: $bp-desktop) {
+      display: none;
+    }
   }
 
   &__logo {
@@ -47,10 +121,31 @@
     display: flex;
     justify-content: space-between;
     gap: 40px;
+
+    @media screen and (max-width: $bp-desktop) {
+      justify-content: space-around;
+    }
+
+    @media screen and (max-width: $bp-tablet) {
+      flex-direction: column-reverse;
+    }
+
+    @media screen and (max-width: $bp-mobile) {
+      gap: 20px;
+    }
   }
 
   &__copyright {
     font-size: 24px;
+
+    @media screen and (max-width: $bp-tablet) {
+      font-size: 16px;
+      text-align: center;
+    }
+
+    @media screen and (max-width: $bp-mobile) {
+      font-size: 12px;
+    }
   }
 }
 
@@ -58,6 +153,16 @@
   display: flex;
   gap: 28px;
   align-items: center;
+
+  @media screen and (max-width: $bp-desktop) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  @media screen and (max-width: $bp-tablet) {
+    align-items: center;
+    gap: 0;
+  }
 }
 
 .subscribe-form {
@@ -87,6 +192,11 @@
   line-height: 1.4;
   color: var(--color-white-f);
 
+  @media screen and (max-width: $bp-tablet) {
+    font-size: 16px;
+    padding: 20px 30px;
+  }
+
   &:focus {
     border-color: var(--color-brand-normal);
     outline: none;
@@ -97,6 +207,10 @@
     font-size: 24px;
     line-height: 1.4;
     font-family: Lato, sans-serif;
+
+    @media screen and (max-width: $bp-tablet) {
+      font-size: 16px;
+    }
   }
 
   &:focus::placeholder {

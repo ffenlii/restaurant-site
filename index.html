@@ -12,7 +12,7 @@
       <div class="container">
         <div class="header__container">
           <div class="header__nav">
-            <a href="./home.html">
+            <a href="./index.html">
               <img
                 class="header__logo"
                 src="./images/logo_f.svg"
@@ -257,8 +257,10 @@
               <p class="blogers-section__text--distance text-small">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               </p>
-              <a class="blogers-section__link link" href="#">Read more</a>
-              <a href="#">
+              <a class="blogers-section__link link" href="blogs.html"
+                >Read more</a
+              >
+              <a href="blogs.html">
                 <svg class="blogers-section__arrow">
                   <use href="./images/icons.svg#icon-arrow"></use>
                 </svg>
@@ -294,8 +296,10 @@
               <p class="blogers-section__text--distance text-small">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               </p>
-              <a class="blogers-section__link link" href="#">Read more</a>
-              <a href="#">
+              <a class="blogers-section__link link" href="blogs.html"
+                >Read more</a
+              >
+              <a href="blogs.html">
                 <svg class="blogers-section__arrow">
                   <use href="./images/icons.svg#icon-arrow"></use>
                 </svg>
@@ -358,67 +362,81 @@
           </button>
         </div>
       </section>
-      <!-- <section class="energy-section">
+      <section class="energy-section">
         <div class="container">
-          <h2 class="section__title">Calories Energy Balance</h2>
+          <h2 class="energy-section__title">Calories Energy Balance</h2>
           <p class="text-small energy-section__distance">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           </p>
-          <ul class="energy-section__list">
-            <li class="energy-section__item">
-              <article class="energy-card">
-                <img
-                  class="energy-card__photo"
-                  src="./images/energy-starters-item.jpg"
-                  alt="Starters background"
-                />
-                <div class="energy-card__link">
-                  <a class="link menu-link" href="#">Starters</a>
-                  <a href="#">
-                    <svg width="46px" height="26px">
-                      <use href="./images/icons.svg#icon-arrow"></use>
-                    </svg>
-                  </a>
-                </div>
-              </article>
-            </li>
-            <li class="energy-section__item">
-              <article class="energy-card">
-                <img
-                  class="energy-card__photo"
-                  src="./images/energy-mains-item.jpg"
-                  alt="Mains background"
-                />
-                <div class="energy-card__link">
-                  <a class="link menu-link" href="#">Mains</a>
-                  <a href="#">
-                    <svg width="46px" height="26px">
-                      <use href="./images/icons.svg#icon-arrow"></use>
-                    </svg>
-                  </a>
-                </div>
-              </article>
-            </li>
-            <li class="energy-section__item">
-              <article class="energy-card">
-                <img
-                  class="energy-card__photo"
-                  src="./images/energy-soups-item.jpg"
-                  alt="Soups background"
-                />
-                <div class="energy-card__link">
-                  <a class="link menu-link" href="#">Soups</a>
-                  <a href="#">
-                    <svg width="46px" height="26px">
-                      <use href="./images/icons.svg#icon-arrow"></use>
-                    </svg>
-                  </a>
-                </div>
-              </article>
-            </li>
-          </ul>
+          <div class="energy-section__container swiper">
+            <ul class="energy-section__list swiper-wrapper">
+              <li class="energy-section__item swiper-slide">
+                <article class="energy-card">
+                  <img
+                    class="energy-card__photo"
+                    src="./images/energy-starters-item.jpg"
+                    alt="Starters background"
+                  />
+                  <div class="energy-card__link">
+                    <a class="link menu-link" href="menu.html#starters-section"
+                      >Starters</a
+                    >
+                    <a
+                      class="energy-card__icon"
+                      href="menu.html#starters-section"
+                    >
+                      <svg class="energy-card__arrow">
+                        <use href="./images/icons.svg#icon-arrow"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </article>
+              </li>
+              <li class="energy-section__item swiper-slide">
+                <article class="energy-card">
+                  <img
+                    class="energy-card__photo"
+                    src="./images/energy-mains-item.jpg"
+                    alt="Mains background"
+                  />
+                  <div class="energy-card__link">
+                    <a class="link menu-link" href="menu.html#mains-section"
+                      >Mains</a
+                    >
+                    <a class="energy-card__icon" href="menu.html#mains-section">
+                      <svg class="energy-card__arrow">
+                        <use href="./images/icons.svg#icon-arrow"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </article>
+              </li>
+              <li class="energy-section__item swiper-slide">
+                <article class="energy-card">
+                  <img
+                    class="energy-card__photo"
+                    src="./images/energy-soups-item.jpg"
+                    alt="Soups background"
+                  />
+                  <div class="energy-card__link">
+                    <a class="link menu-link" href="menu.html#drinks-section"
+                      >Drinks</a
+                    >
+                    <a
+                      class="energy-card__icon"
+                      href="menu.html#drinks-section"
+                    >
+                      <svg class="energy-card__arrow">
+                        <use href="./images/icons.svg#icon-arrow"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </article>
+              </li>
+            </ul>
+          </div>
         </div>
-      </section> -->
+      </section>
       <section class="comment-section">
         <div class="container">
           <h3 class="visually-hidden">John comment</h3>
@@ -456,7 +474,7 @@
         </div>
       </section>
     </main>
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container">
         <div class="footer__container">
           <div class="footer__link">
@@ -485,7 +503,7 @@
             </ul>
           </div>
           <div class="footer__form">
-            <p class="footer__item">Never Miss a Recipe</p>
+            <p class="footer__form-item">Never Miss a Recipe</p>
             <div class="subscribe-item">
               <form class="subscribe-form">
                 <div class="footer-field">
@@ -549,18 +567,18 @@
           </address>
         </div>
       </div>
-    </footer> -->
+    </footer>
 
     <div class="modal is-hidden">
       <div class="modal__window">
         <button class="modal-btn-close" type="button">
-          <svg width="30" height="30">
-            <use href=".//images/modal-btn.svg"></use>
+          <svg class="test">
+            <use class="modal__btn-icon" href=".//images/modal-btn.svg"></use>
           </svg>
         </button>
         <ul class="modal__link">
           <li class="modal__item">
-            <a class="modal__text" href="./home.html">home</a>
+            <a class="modal__text" href="./index.html">home</a>
           </li>
           <li class="modal__item">
             <a class="modal__text" href="./menu.html">menu</a>
@@ -596,28 +614,28 @@
           <ul class="address__social">
             <li>
               <a href="#">
-                <svg class="address__icon" width="28" height="28">
+                <svg class="address__icon">
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
             <li>
               <a href="#">
-                <svg class="address__icon" width="28" height="22">
+                <svg class="address__icon">
                   <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
             <li>
               <a href="#">
-                <svg class="address__icon" width="26" height="26">
+                <svg class="address__icon">
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li>
               <a href="#">
-                <svg class="address__icon" width="28" height="22">
+                <svg class="address__icon">
                   <use href="./images/icons.svg#icon-youtube"></use>
                 </svg>
               </a>
@@ -627,6 +645,8 @@
       </div>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="./js/modal.js"></script>
+    <script src="./js/_energy-slider.js"></script>
   </body>
 </html>

@@ -1,6 +1,31 @@
+@use '../utils/variables' as *;
+
 .energy-card {
   height: 710px;
   position: relative;
+
+  @media screen and (max-width: $bp-desktop) {
+    height: 510px;
+  }
+
+  @media screen and (max-width: $bp-tablet) {
+    height: 410px;
+  }
+
+  &__arrow {
+    width: 46px;
+    height: 26px;
+
+    @media screen and (max-width: $bp-mobile) {
+      width: 36px;
+      height: 18px;
+    }
+  }
+
+  &__icon {
+    display: flex;
+    align-items: center;
+  }
 
   &__photo {
     position: absolute;

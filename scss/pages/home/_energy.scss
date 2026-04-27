@@ -1,24 +1,57 @@
+@use '../../utils/variables' as *;
+
 .energy-section {
   padding: 130px 0;
   text-align: center;
 
+  @media screen and (max-width: $bp-desktop) {
+    padding: 100px 0 70px;
+  }
+
+  @media screen and (max-width: $bp-tablet) {
+    padding: 60px 0 40px;
+  }
+
   &__list {
     display: flex;
-    gap: 40px;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-wrap: nowrap;
   }
 
   &__item {
-    flex-basis: calc((100% - 80px) / 3);
+    flex-shrink: 0;
+    width: 100%;
+  }
+
+  &__container {
+    overflow: hidden;
   }
 
   &__distance {
     margin-bottom: 125px;
+
+    @media screen and (max-width: $bp-desktop) {
+      margin-bottom: 74px;
+    }
+
+    @media screen and (max-width: $bp-tablet) {
+      margin-bottom: 44px;
+    }
   }
 
-  //  display: flex;
-  //   flex-shrink: 1;
-  //   min-width: 0;
-  //   max-width: 100%;
+  &__title {
+    font-size: 108px;
+    margin-bottom: 18px;
+
+    @media screen and (max-width: $bp-desktop) {
+      font-size: 88px;
+    }
+
+    @media screen and (max-width: $bp-tablet) {
+      font-size: 48px;
+    }
+
+    @media screen and (max-width: $bp-mobile) {
+      font-size: 32px;
+    }
+  }
 }
