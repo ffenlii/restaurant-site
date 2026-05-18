@@ -5,29 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact</title>
 
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <header class="header-section">
+    <header class="header">
       <div class="container">
-        <div class="header-container">
-          <div class="header-nav">
-            <a href="./home.html">
-              <img src="./images/logo_f.svg" alt="restaurant's logo" />
+        <div class="header__container">
+          <div class="header__nav">
+            <a href="./index.html">
+              <img
+                class="header__logo"
+                src="./images/logo_f.svg"
+                alt="Restaurant's logo"
+              />
             </a>
-            <button class="header-button-menu modal-btn-open'" type="button">
-              <svg width="94" height="71">
+            <button
+              class="header__btn-burger header-button-burger modal-btn-open'"
+              type="button"
+            >
+              <svg class="header__burger-icon">
                 <use href="./images/icons.svg#icon-nav-open"></use>
               </svg>
             </button>
           </div>
-          <div class="header-link">
+          <div class="header__contact">
             <address>
-              <a class="header-address link" href="tel:+86852346000"
-                >+86 852 346 000</a
-              >
+              <a class="header__link link" href="tel:+86852346000">
+                +86 852 346 000
+              </a>
             </address>
-            <button class="header-button button" type="button">
+            <button class="header__button-reserv button" type="button">
               Reservations
             </button>
           </div>
@@ -35,26 +42,26 @@
       </div>
     </header>
     <main>
-      <section class="hero-section contact-hero-section">
+      <section class="hero-contact-section">
         <div class="container">
-          <h1 class="hero-title">Get in Touch</h1>
-          <p class="hero-text hero-description">
+          <h1 class="text-title">Get in Touch</h1>
+          <p class="text-medium hero-contact-section__description">
             The freshest ingredients for you every day
           </p>
           <div class="work-schedule">
-            <div class="open-days">
-              <p class="open-text">Open Time</p>
+            <div class="work-schedule__days">
+              <p class="work-schedule__text">Open Time</p>
               <p>Sunday - Friday</p>
             </div>
             <ul class="schedule-text">
-              <li class="schedule-hours">Brunch 11:00–12:00</li>
-              <li class="schedule-hours">Lunch 13:00–17:00</li>
-              <li class="schedule-hours">Dinner 18:00–20:00</li>
+              <li class="schedule-text__hours">Brunch 11:00–12:00</li>
+              <li class="schedule-text__hours">Lunch 13:00–17:00</li>
+              <li class="schedule-text__hours">Dinner 18:00–20:00</li>
             </ul>
           </div>
         </div>
       </section>
-      <section class="contact-section">
+      <!-- <section class="contact-section">
         <div class="container">
           <div class="contact-container">
             <img
@@ -190,38 +197,38 @@
             Book now
           </button>
         </div>
-      </section>
+      </section> -->
     </main>
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container">
-        <div class="footer-container-link">
-          <div class="footer-link">
-            <a class="footer-logo" href="/">
-              <h3 class="footer-title">Food Zero.</h3>
+        <div class="footer__container">
+          <div class="footer__link">
+            <a class="footer__logo" href="./home.html">
+              <h3 class="footer__title">Food Zero.</h3>
             </a>
-            <ul class="footer-contacts">
-              <p class="footer-item">Contacts</p>
+            <ul class="address__contacts">
+              <p class="footer__item">Contacts</p>
               <li>
-                <a class="link footer-address" href="tel:+86852346000"
+                <a class="link address__link" href="tel:+86852346000"
                   >+86 852 346 000</a
                 >
               </li>
               <li>
-                <a class="link footer-address" href="mailto:info@foodzero.com"
+                <a class="link address__link" href="mailto:info@foodzero.com"
                   >info@foodzero.com</a
                 >
               </li>
               <li>
                 <a
-                  class="link footer-address"
+                  class="link address__link"
                   href="https://maps.app.goo.gl/G3fx3dMrVu5tf39C7"
                   >1959 Sepulveda Blvd. Culver City, CA, 90230</a
                 >
               </li>
             </ul>
           </div>
-          <div class="footer-form">
-            <p class="footer-item">Never Miss a Recipe</p>
+          <div class="footer__form">
+            <p class="footer__form-item">Never Miss a Recipe</p>
             <div class="subscribe-item">
               <form class="subscribe-form">
                 <div class="footer-field">
@@ -242,41 +249,41 @@
                 Subscibe
               </button>
             </div>
-            <p class="footer-inform">
+            <p class="footer__inform">
               Join our subscribers and get best recipe delivered each week!
             </p>
           </div>
         </div>
-        <div class="footer-info">
-          <p class="footer-copyright">
+        <div class="footer__info">
+          <p class="footer__copyright">
             &copy; 2020 Zero Inc. All rights Reserved
           </p>
           <address>
-            <ul class="address-social">
+            <ul class="address__social">
               <li>
                 <a href="#">
-                  <svg class="address-icon" width="28" height="28">
+                  <svg class="address__icon" width="28" height="28">
                     <use href="./images/icons.svg#icon-instagram"></use>
                   </svg>
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <svg class="address-icon" width="28" height="22">
+                  <svg class="address__icon" width="28" height="22">
                     <use href="./images/icons.svg#icon-twitter"></use>
                   </svg>
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <svg class="address-icon" width="26" height="26">
+                  <svg class="address__icon" width="26" height="26">
                     <use href="./images/icons.svg#icon-facebook"></use>
                   </svg>
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <svg class="address-icon" width="28" height="22">
+                  <svg class="address__icon" width="28" height="22">
                     <use href="./images/icons.svg#icon-youtube"></use>
                   </svg>
                 </a>
@@ -285,75 +292,75 @@
           </address>
         </div>
       </div>
-    </footer>
+    </footer> -->
 
     <div class="modal is-hidden">
-      <div class="modal-window">
+      <div class="modal__window">
         <button class="modal-btn-close" type="button">
-          <svg width="30" height="30">
-            <use href=".//images/modal-btn.svg"></use>
+          <svg class="test">
+            <use class="modal__btn-icon" href=".//images/modal-btn.svg"></use>
           </svg>
         </button>
-        <ul class="modal-link">
-          <li class="modal-item">
-            <a class="modal-link-text" href="./home.html">home</a>
+        <ul class="modal__link">
+          <li class="modal__item">
+            <a class="modal__text" href="./index.html">home</a>
           </li>
-          <li class="modal-item">
-            <a class="modal-link-text" href="./menu.html">menu</a>
+          <li class="modal__item">
+            <a class="modal__text" href="./menu.html">menu</a>
           </li>
-          <li class="modal-item">
-            <a class="modal-link-text" href="./about.html">about</a>
+          <li class="modal__item">
+            <a class="modal__text" href="./about.html">about</a>
           </li>
-          <li class="modal-item">
-            <a class="modal-link-text" href="./contact.html">contact</a>
+          <li class="modal__item">
+            <a class="modal__text" href="./contact.html">contact</a>
           </li>
         </ul>
         <div class="modal-contact">
-          <ul class="footer-contacts">
-            <p class="modal-contact-title">Contact</p>
+          <ul class="address__contacts">
+            <p class="modal__contact-title">Contact</p>
             <li>
-              <a class="link modal-address" href="tel:+86852346000"
+              <a class="link address__link" href="tel:+86852346000"
                 >+86 852 346 000</a
               >
             </li>
             <li>
-              <a class="link modal-address" href="mailto:info@foodzero.com"
+              <a class="link address__link" href="mailto:info@foodzero.com"
                 >info@foodzero.com</a
               >
             </li>
             <li>
               <a
-                class="link modal-address"
+                class="link address__link"
                 href="https://maps.app.goo.gl/G3fx3dMrVu5tf39C7"
                 >1959 Sepulveda Blvd. Culver City, CA, 90230</a
               >
             </li>
           </ul>
-          <ul class="address-social">
+          <ul class="address__social">
             <li>
               <a href="#">
-                <svg class="address-icon" width="28" height="28">
+                <svg class="address__icon">
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
             <li>
               <a href="#">
-                <svg class="address-icon" width="28" height="22">
+                <svg class="address__icon">
                   <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
             <li>
               <a href="#">
-                <svg class="address-icon" width="26" height="26">
+                <svg class="address__icon">
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li>
               <a href="#">
-                <svg class="address-icon" width="28" height="22">
+                <svg class="address__icon">
                   <use href="./images/icons.svg#icon-youtube"></use>
                 </svg>
               </a>

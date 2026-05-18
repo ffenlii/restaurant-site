@@ -1,13 +1,14 @@
-.contact-hero-section {
+.hero-contact-section {
   background-image: url('../images/contact-hero-background.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   padding: 415px 0 130px 0;
-}
+  color: var(--color-white-f);
 
-.hero-description {
-  margin-bottom: 93px;
+  &__description {
+    margin-bottom: 93px;
+  }
 }
 
 .work-schedule {
@@ -15,21 +16,21 @@
   flex-direction: column;
   margin-left: auto;
   max-width: 695px;
-}
 
-.open-text {
-  font-size: 32px;
-}
+  &__text {
+    font-size: 32px;
+  }
 
-.open-days {
-  display: flex;
-  font-weight: 400;
-  font-size: 24px;
-  border-bottom: 2px dashed var(--color-white-f);
-  padding: 38px 0;
-  margin-bottom: 38px;
-  justify-content: space-between;
-  align-items: center;
+  &__days {
+    display: flex;
+    font-weight: 400;
+    font-size: 24px;
+    border-bottom: 2px dashed var(--color-white-f);
+    padding: 38px 0;
+    margin-bottom: 38px;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .schedule-text {
@@ -37,8 +38,8 @@
   gap: 20px;
   font-size: 24px;
   justify-content: space-between;
-}
 
-.schedule-hours {
-  max-width: 142px;
+  &__hours {
+    max-width: 142px;
+  }
 }
