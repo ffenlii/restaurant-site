@@ -1,3 +1,5 @@
+@use '../../utils/variables' as *;
+
 .hero-contact-section {
   background-image: url('../images/contact-hero-background.jpg');
   background-repeat: no-repeat;
@@ -6,8 +8,27 @@
   padding: 415px 0 130px 0;
   color: var(--color-white-f);
 
+  @media screen and (max-width: $bp-tablet) {
+    padding: 240px 0 80px 0;
+  }
+
+  @media screen and (max-width: $bp-mobile) {
+    padding: 200px 0 80px 0;
+  }
+
   &__description {
     margin-bottom: 93px;
+
+    @media screen and (max-width: $bp-mobile) {
+      margin-bottom: 42px;
+    }
+  }
+
+  &__title {
+    @media screen and (max-width: $bp-tablet) {
+      font-size: 68px;
+      margin-bottom: 18px;
+    }
   }
 }
 
@@ -30,6 +51,18 @@
     margin-bottom: 38px;
     justify-content: space-between;
     align-items: center;
+
+    @media screen and (max-width: $bp-tablet) {
+      justify-content: space-around;
+      gap: 24px;
+      padding: 24px;
+    }
+
+    @media screen and (max-width: $bp-mobile) {
+      flex-direction: column;
+      gap: 0;
+      padding: 16px 0;
+    }
   }
 }
 
@@ -39,7 +72,21 @@
   font-size: 24px;
   justify-content: space-between;
 
+  @media screen and (max-width: $bp-tablet) {
+    flex-direction: column;
+  }
+
   &__hours {
     max-width: 142px;
+
+    @media screen and (max-width: $bp-tablet) {
+      text-align: center;
+      word-spacing: 40px;
+      max-width: none;
+    }
+
+    @media screen and (max-width: $bp-mobile) {
+      word-spacing: 30px;
+    }
   }
 }

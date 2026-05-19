@@ -1,3 +1,4 @@
+@use '../../utils/variables' as *;
 .contact-section {
   background-image: url('../images/contact-orange-background.png');
   background-repeat: no-repeat;
@@ -6,6 +7,22 @@
   font-size: 32px;
   color: var(--color-brand-dark);
   padding: 272px 0 135px 0;
+
+  @media screen and (max-width: $bp-desktop) {
+    font-size: 28px;
+  }
+
+  @media screen and (max-width: $bp-tablet) {
+    font-size: 24px;
+    background-size: 154px 140px;
+  }
+
+  @media screen and (max-width: $bp-mobile) {
+    background-position: center 32px;
+    background-size: 124px 100px;
+    font-size: 16px;
+    padding: 110px 0 80px 0;
+  }
 }
 
 .contact-container {
@@ -13,6 +30,11 @@
   gap: 40px;
   justify-content: space-between;
   margin-bottom: 145px;
+
+  @media screen and (max-width: $bp-mobile) {
+    margin-bottom: 64px;
+    gap: 20px;
+  }
 }
 
 .contact-text {
@@ -36,16 +58,39 @@
   display: flex;
   justify-content: space-between;
   gap: 40px;
+
+  @media screen and (max-width: $bp-mobile) {
+    gap: 20px;
+  }
 }
 
 .address-inform {
   max-width: 744px;
   align-content: flex-end;
   margin-bottom: 325px;
+
+  @media screen and (max-width: $bp-desktop) {
+    margin-bottom: 0;
+    align-content: center;
+  }
+  @media screen and (max-width: $bp-tablet) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-basis: 70%;
+  }
+
+  @media screen and (max-width: $bp-mobile) {
+    margin-bottom: 16px;
+  }
 }
 
 .map-button {
   color: var(--color-black);
+
+  @media screen and (max-width: $bp-mobile) {
+    padding: 9px;
+  }
 }
 
 .map-link {
@@ -64,4 +109,7 @@
 
 .adress-text {
   margin-bottom: 55px;
+  @media screen and (max-width: $bp-tablet) {
+    margin-bottom: 24px;
+  }
 }
