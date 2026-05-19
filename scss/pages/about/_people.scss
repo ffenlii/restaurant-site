@@ -1,18 +1,59 @@
+@use '../../utils/variables' as *;
+
 .people-section {
   padding: 165px 0 305px 0;
+
+  @media screen and (max-width: $bp-desktop) {
+    padding: 80px 0 160px;
+  }
+
+  &__image {
+    display: flex;
+    flex-shrink: 1;
+    min-width: 0;
+    max-width: 100%;
+    object-fit: cover;
+
+    @media screen and (max-width: $bp-tablet) {
+      max-width: 80%;
+    }
+  }
 }
 
 .people-container {
   display: flex;
   gap: 100px;
+
+  @media screen and (max-width: $bp-tablet) {
+    gap: 24px;
+  }
 }
 
 .manager-text {
   padding-top: 322px;
   max-width: 510px;
+  @media screen and (max-width: $bp-desktop) {
+    flex-basis: 50%;
+  }
+}
+
+.manager-name {
+  @media screen and (max-width: $bp-desktop) {
+    flex-basis: 50%;
+  }
 }
 
 .chef-text {
   display: flex;
   align-items: flex-end;
+
+  @media screen and (max-width: $bp-desktop) {
+    flex-basis: 50%;
+  }
+}
+
+.chef-name {
+  @media screen and (max-width: $bp-desktop) {
+    flex-basis: 50%;
+  }
 }
