@@ -88,12 +88,26 @@
   max-width: 1650px;
   width: 100%;
   margin-bottom: 46px;
+
+  @media screen and (max-width: $bp-tablet) {
+    margin-bottom: 24px;
+  }
+
+  @media screen and (max-width: $bp-mobile) {
+    padding: 14px 20px;
+    margin-bottom: 20px;
+  }
 }
 
 .reservation-group {
   display: flex;
   gap: 45px;
   justify-content: space-between;
+
+  @media screen and (max-width: $bp-tablet) {
+    flex-direction: column;
+    gap: 0;
+  }
 }
 
 .book-select {

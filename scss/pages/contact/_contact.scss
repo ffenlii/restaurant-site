@@ -9,19 +9,24 @@
   padding: 272px 0 135px 0;
 
   @media screen and (max-width: $bp-desktop) {
+    background-size: 258px 228px;
+    background-position: center 80px;
     font-size: 28px;
+    padding: 200px 0 120px 0;
   }
 
   @media screen and (max-width: $bp-tablet) {
-    font-size: 24px;
+    font-size: 20px;
     background-size: 154px 140px;
+    padding: 100px 0 80px 0;
+    background-position: center 40px;
   }
 
   @media screen and (max-width: $bp-mobile) {
-    background-position: center 32px;
-    background-size: 124px 100px;
+    background-position: center 16px;
+    background-size: 114px 90px;
     font-size: 16px;
-    padding: 110px 0 80px 0;
+    padding: 90px 0 60px 0;
   }
 }
 
@@ -31,8 +36,16 @@
   justify-content: space-between;
   margin-bottom: 145px;
 
+  @media screen and (max-width: $bp-tablet) {
+    margin-bottom: 110px;
+  }
+
+  @media screen and (max-width: $bp-tablet) {
+    margin-bottom: 62px;
+  }
+
   @media screen and (max-width: $bp-mobile) {
-    margin-bottom: 64px;
+    margin-bottom: 46px;
     gap: 20px;
   }
 }
@@ -72,12 +85,12 @@
   @media screen and (max-width: $bp-desktop) {
     margin-bottom: 0;
     align-content: center;
+    flex-basis: 70%;
   }
   @media screen and (max-width: $bp-tablet) {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    flex-basis: 70%;
   }
 
   @media screen and (max-width: $bp-mobile) {
@@ -90,6 +103,7 @@
 
   @media screen and (max-width: $bp-mobile) {
     padding: 9px;
+    font-size: 14px;
   }
 }
 
