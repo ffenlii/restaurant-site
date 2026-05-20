@@ -4,6 +4,8 @@ const swiper = new Swiper('.swiper', {
   slidesPerView: 1,
   spaceBetween: 20,
   grabCursor: true, // Курсор-рука для зручності
+  simulateTouch: true,
+  touchStartPreventDefault: false,
 
   // Налаштування адаптиву
   breakpoints: {
