@@ -7,6 +7,10 @@
     padding: 80px 0 160px;
   }
 
+  @media screen and (max-width: $bp-tablet) {
+    padding: 0;
+  }
+
   &__image {
     display: flex;
     flex-shrink: 1;
@@ -17,23 +21,86 @@
     @media screen and (max-width: $bp-tablet) {
       max-width: 80%;
     }
+
+    @media screen and (max-width: $bp-tablet) {
+      max-width: 90%;
+    }
+  }
+
+  &__item {
+    @media screen and (max-width: $bp-desktop) {
+      font-size: 56px;
+      margin-bottom: 32px;
+    }
+
+    @media screen and (max-width: $bp-tablet) {
+      font-size: 42px;
+      margin-bottom: 8px;
+    }
+
+    @media screen and (max-width: $bp-mobile) {
+      font-size: 32px;
+      margin-bottom: 8px;
+    }
   }
 }
 
 .people-container {
   display: flex;
-  gap: 100px;
+  gap: 40px;
+
+  @media screen and (max-width: $bp-desktop) {
+    gap: 46px;
+    margin-bottom: 48px;
+  }
 
   @media screen and (max-width: $bp-tablet) {
     gap: 24px;
+    margin-bottom: 42px;
+  }
+
+  @media screen and (max-width: $bp-mobile) {
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+
+  &__last-item {
+    @media screen and (max-width: $bp-mobile) {
+      flex-direction: column-reverse;
+    }
+  }
+}
+
+.people-name {
+  font-weight: 400;
+  font-size: 24px;
+
+  @media screen and (max-width: $bp-tablet) {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+
+  @media screen and (max-width: $bp-tablet) {
+    font-size: 12px;
+    margin-bottom: 8px;
   }
 }
 
 .manager-text {
   padding-top: 322px;
-  max-width: 510px;
+  max-width: 50%;
   @media screen and (max-width: $bp-desktop) {
     flex-basis: 50%;
+  }
+
+  @media screen and (max-width: $bp-tablet) {
+    padding-top: 0;
+    align-content: center;
+  }
+
+  @media screen and (max-width: $bp-mobile) {
+    max-width: 100%;
   }
 }
 
@@ -46,9 +113,14 @@
 .chef-text {
   display: flex;
   align-items: flex-end;
+  max-width: 50%;
 
   @media screen and (max-width: $bp-desktop) {
     flex-basis: 50%;
+  }
+
+  @media screen and (max-width: $bp-mobile) {
+    max-width: 100%;
   }
 }
 

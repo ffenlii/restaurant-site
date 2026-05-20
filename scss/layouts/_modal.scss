@@ -26,7 +26,7 @@
   &__window {
     display: flex;
     gap: 30px;
-    padding-top: 220px;
+    margin-top: 80px;
     justify-content: space-around;
     align-items: center;
     max-width: 1300px;
@@ -34,7 +34,6 @@
 
     @media screen and (max-width: $bp-tablet) {
       flex-direction: column;
-      padding: 300px 0 100px;
       gap: 20px;
       text-align: center;
     }
