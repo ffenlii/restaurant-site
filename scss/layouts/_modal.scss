@@ -15,8 +15,8 @@
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  //justify-content: center;
+  //align-items: center;
   z-index: 3;
   transition:
     opacity 0.3s,
@@ -26,16 +26,21 @@
   &__window {
     display: flex;
     gap: 30px;
-    margin-top: 80px;
     justify-content: space-around;
     align-items: center;
     max-width: 1300px;
     width: 100%;
+    margin: auto;
+
+    @media screen and (max-width: $bp-desktop) {
+      padding: 120px 100px;
+    }
 
     @media screen and (max-width: $bp-tablet) {
       flex-direction: column;
       gap: 20px;
       text-align: center;
+      padding-top: 140px;
     }
 
     .test {
