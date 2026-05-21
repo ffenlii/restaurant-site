@@ -35,20 +35,20 @@
       flex-direction: column;
     }
   }
-}
 
-.drinks-inform {
-  margin-bottom: 160px;
+  &__subtitle {
+    margin-bottom: 160px;
 
-  @media screen and (max-width: $bp-desktop) {
-    margin-bottom: 80px;
-  }
+    @media screen and (max-width: $bp-desktop) {
+      margin-bottom: 80px;
+    }
 
-  @media screen and (max-width: $bp-tablet) {
-    margin-bottom: 60px;
-  }
+    @media screen and (max-width: $bp-tablet) {
+      margin-bottom: 60px;
+    }
 
-  @media screen and (max-width: $bp-tablet) {
-    margin-bottom: 40px;
+    @media screen and (max-width: $bp-tablet) {
+      margin-bottom: 40px;
+    }
   }
 }

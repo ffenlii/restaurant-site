@@ -16,20 +16,20 @@
       flex-direction: column-reverse;
     }
   }
-}
 
-.mains-inform {
-  margin-bottom: 130px;
+  &__subtitle {
+    margin-bottom: 130px;
 
-  @media screen and (max-width: $bp-desktop) {
-    margin-bottom: 80px;
-  }
+    @media screen and (max-width: $bp-desktop) {
+      margin-bottom: 80px;
+    }
 
-  @media screen and (max-width: $bp-tablet) {
-    margin-bottom: 40px;
-  }
+    @media screen and (max-width: $bp-tablet) {
+      margin-bottom: 40px;
+    }
 
-  @media screen and (max-width: $bp-mobile) {
-    margin-bottom: 20px;
+    @media screen and (max-width: $bp-mobile) {
+      margin-bottom: 20px;
+    }
   }
 }

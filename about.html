@@ -54,8 +54,8 @@
       </section>
       <section class="story-section">
         <div class="container">
-          <div class="story-container">
-            <div class="story-text">
+          <div class="story-section__container">
+            <div class="story-section__info">
               <h2 class="section__title">Our Story</h2>
               <p class="text-small">
                 We started in 2020 with a simple mission: to prove that healthy
@@ -76,17 +76,17 @@
         <div class="container">
           <ul>
             <li>
-              <article class="people-container">
-                <div class="manager-name">
+              <article class="people-section__container">
+                <div class="people-section__manager">
                   <h3 class="people-section__item">Restuarant Manager</h3>
-                  <p class="people-name">Carson Hugn</p>
+                  <p class="people-section__name">Carson Hugn</p>
                   <img
                     class="people-section__image"
                     src="./images/about_carson.jpg"
                     alt="Manager Carson"
                   />
                 </div>
-                <p class="text-small manager-text">
+                <p class="text-small people-section__manager-text">
                   Carson ensures that every guest feels at home. With over 8
                   years in hospitality, he manages day-to-day operations and
                   maintains the highest standards of service and comfort.
@@ -94,15 +94,17 @@
               </article>
             </li>
             <li>
-              <article class="people-container people-container__last-item">
-                <p class="text-small chef-text">
+              <article
+                class="people-section__container people-container__last-item"
+              >
+                <p class="text-small people-section__chef-text">
                   Jane leads our kitchen team with a passion for clean eating.
                   He develops seasonal menus using fresh, local components to
                   deliver nutritious, premium-quality dishes.
                 </p>
-                <div class="chef-name">
+                <div class="people-section__chef">
                   <h3 class="people-section__item">Executive Chef</h3>
-                  <p class="people-name">Jane Cooper</p>
+                  <p class="people-section__name">Jane Cooper</p>
                   <img
                     class="people-section__image"
                     src="./images/about_jane.jpg"
@@ -117,12 +119,12 @@
       <section class="delicious-section">
         <div class="container">
           <h2 class="section__title">It looks delicious</h2>
-          <p class="text-small delicious-text">
+          <p class="text-small delicious-section__subtitle">
             Click here to open our food gallery and check out the photos of our
             real dishes, desserts, and drinks.
           </p>
-          <button class="delicious-button-play">
-            <svg class="delicious-button-play__icon">
+          <button class="button-delicious">
+            <svg class="button-delicious__icon">
               <use href="./images/icons.svg#icon-button-play"></use>
             </svg>
           </button>
@@ -130,16 +132,18 @@
       </section>
       <section class="process-section">
         <div class="container">
-          <h2 class="section__title process-title">Sophisticated Process</h2>
+          <h2 class="section__title process-section__title">
+            Sophisticated Process
+          </h2>
           <ul>
-            <li class="slice-container">
+            <li class="process-section__slice-container">
               <img
                 class="section__image"
                 src="./images/about_clice.jpg"
                 alt="We cut the meat"
               />
-              <div class="slice-text">
-                <h3 class="process-item">01.Slice</h3>
+              <div class="process-section__slice-text">
+                <h3 class="process-section__chapter">01.Slice</h3>
                 <p class="text-small">
                   Everything starts with the right cut. Our chef selects premium
                   meat and uses professional knives to slice it into perfect,
@@ -148,10 +152,10 @@
                 </p>
               </div>
             </li>
-            <div class="process-container">
-              <li class="bake-container">
-                <div class="bake-item">
-                  <h3 class="process-item">03.Bake</h3>
+            <div class="process-section__container">
+              <li class="process-section__bake-container">
+                <div class="process-section__bake-item">
+                  <h3 class="process-section__chapter">03.Bake</h3>
                   <p class="text-small">
                     To make the meat tender, we leave it in a simple, natural
                     marinade for a few hours. We use only coarse sea salt, fresh
@@ -165,14 +169,14 @@
                   alt="We bake meat"
                 />
               </li>
-              <li class="pickled-container">
+              <li class="process-section__pickled-container">
                 <img
-                  class="section__image"
+                  class="section__image process-section__image"
                   src="./images/about_pickled.jpg"
                   alt="Steak sprinkled with salt"
                 />
-                <div class="pickled-item">
-                  <h3 class="process-item">02.Pickled</h3>
+                <div class="process-section__pickled-item">
+                  <h3 class="process-section__chapter">02.Pickled</h3>
                   <p class="text-small">
                     For the final step, we cook the steaks on a professional
                     grill over an open fire. The high temperature quickly

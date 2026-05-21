@@ -108,12 +108,12 @@
       display: none;
     }
   }
-}
 
-.modal.is-hidden {
-  /* Щоб заховати модальне вікно */
-  opacity: 0;
-  /* Чи буде елемент видимий для браузера */
-  visibility: hidden;
-  pointer-events: none;
+  &.is-hidden {
+    /* Щоб заховати модальне вікно */
+    opacity: 0;
+    /* Чи буде елемент видимий для браузера */
+    visibility: hidden;
+    pointer-events: none;
+  }
 }

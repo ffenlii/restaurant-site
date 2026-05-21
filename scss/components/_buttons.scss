@@ -12,10 +12,6 @@ button {
     border 0.3s,
     transform 0.3s;
 
-  &:hover {
-    transform: scale(1.1);
-  }
-
   @media screen and (max-width: $bp-desktop) {
     font-size: 24px;
     padding: 16px 36px;
@@ -26,6 +22,10 @@ button {
     font-size: 16px;
     padding: 14px 24px;
     transform: scale(1.03);
+  }
+
+  &:hover {
+    transform: scale(1.1);
   }
 }
 
@@ -47,10 +47,10 @@ button {
   stroke: var(--color-white-f);
   width: 74px;
   height: 61px;
-}
 
-.header__btn-burger:hover {
-  stroke: var(--color-light-grey);
+  &:hover {
+    stroke: var(--color-light-grey);
+  }
 }
 
 .button-reservation {
@@ -77,10 +77,10 @@ button {
 .button-reservation-light {
   background-color: var(--color-brand-normal);
   transition: transform 0.3s;
-}
 
-.button-reservation-light:hover {
-  background-color: var(--color-brand-dark);
+  &:hover {
+    background-color: var(--color-brand-dark);
+  }
 }
 
 .bloger-button {
@@ -100,11 +100,11 @@ button {
 .button-subscribe {
   background-color: var(--color-brand-normal);
   border: none;
-}
 
-.button-subscribe:hover {
-  background-color: transparent;
-  border-color: var(--color-white-f);
+  &:hover {
+    background-color: transparent;
+    border-color: var(--color-white-f);
+  }
 }
 
 .comment-button {
@@ -131,14 +131,14 @@ button {
       height: 10px;
     }
   }
-}
 
-.comment-button:hover {
-  transform: scale(1.1);
-}
+  &:hover {
+    transform: scale(1.1);
+  }
 
-.comment-button.back {
-  transform: rotate(180deg);
+  &.back {
+    transform: rotate(180deg);
+  }
 }
 
 .modal-btn-close {
@@ -155,9 +155,9 @@ button {
     top: 10px;
     left: 10px;
   }
-}
 
-.modal-btn-close:hover {
-  fill: var(--color-white-f);
-  cursor: pointer;
+  &:hover {
+    fill: var(--color-white-f);
+    cursor: pointer;
+  }
 }
