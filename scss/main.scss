@@ -5,15 +5,17 @@
 @use './utils/fonts';
 @use './utils/texts';
 
-@use './components/buttons';
-@use './components/links';
-@use './components/energy-card';
 @use './components/address';
+@use './components/blog-card';
+@use './components/booking-form';
+@use './components/buttons';
+@use './components/energy-card';
+@use './components/links';
 
+@use './layouts/booking';
 @use './layouts/container';
 @use './layouts/header';
 @use './layouts/sections';
-@use './layouts/reservation-section';
 @use './layouts/footer';
 @use './layouts/modal';
 @use './layouts/dish';

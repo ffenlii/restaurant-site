@@ -20,8 +20,9 @@
               />
             </a>
             <button
-              class="header__btn-burger header-button-burger modal-btn-open'"
+              class="header__btn-burger header-button-burger modal-btn-open"
               type="button"
+              aria-label="Open navigation menu"
             >
               <svg class="header__burger-icon">
                 <use href="./images/icons.svg#icon-nav-open"></use>
@@ -29,11 +30,9 @@
             </button>
           </div>
           <div class="header__contact">
-            <address>
-              <a class="header__link link" href="tel:+86852346000">
-                +86 852 346 000
-              </a>
-            </address>
+            <a class="header__link link" href="tel:+86852346000">
+              +86 852 346 000
+            </a>
             <button class="header__button-reserv button" type="button">
               Reservations
             </button>
@@ -44,8 +43,9 @@
     <main>
       <section class="hero-menu-section">
         <div class="container">
-          <h1 class="text-title hero-menu-section__title--limited">
-            View Our New Menu
+          <h1 class="text-title">
+            View Our<br />
+            New Menu
           </h1>
           <p class="text-medium">The freshest ingredients for you every day</p>
         </div>
@@ -186,16 +186,18 @@
           </div>
         </div>
       </section>
-      <section class="reservation-section">
+      <section class="booking-section">
         <div class="container">
-          <h2 class="text-topic">Make a Reservation</h2>
-          <p class="text-small reservation-text">
+          <h2 class="booking-section__title section__title">
+            Make a Reservation
+          </h2>
+          <p class="text-small booking-section__subtitle">
             Get in touch with restaurant
           </p>
-          <form class="book-form">
+          <form class="booking-form">
             <label class="visually-hidden" for="book-date">Date</label>
             <input
-              class="book-select reservation-element"
+              class="booking-form__select booking-form__element"
               type="date"
               name="book-date"
               id="book-date"
@@ -203,39 +205,38 @@
 
             <label class="visually-hidden" for="book-time">Time</label>
             <select
-              class="book-select reservation-element"
+              class="booking-form__select booking-form__element"
               name="book-time"
               id="book-time"
             >
-              <option value="">1:00 pm</option>
-              <option value="">2:00 pm</option>
-              <option value="">3:00 pm</option>
-              <option value="">4:00 pm</option>
-              <option value="">5:00 pm</option>
-              <option value="">6:00 pm</option>
-              <option value="">7:00 pm</option>
-              <option value="">8:00 pm</option>
-              <option value="">9:00 pm</option>
+              <option value="1:00 pm">1:00 pm</option>
+              <option value="2:00 pm">2:00 pm</option>
+              <option value="3:00 pm">3:00 pm</option>
+              <option value="4:00 pm">4:00 pm</option>
+              <option value="5:00 pm">5:00 pm</option>
+              <option value="6:00 pm">6:00 pm</option>
+              <option value="7:00 pm">7:00 pm</option>
+              <option value="8:00 pm">8:00 pm</option>
+              <option value="9:00 pm">9:00 pm</option>
             </select>
 
             <label class="visually-hidden" for="book-persons">Persons</label>
             <select
-              class="book-select reservation-element"
-              type="date"
+              class="booking-form__select booking-form__element"
               name="book-persons"
               id="book-persons"
             >
-              <option value="">1 person</option>
-              <option value="">2 person</option>
-              <option value="">3 person</option>
-              <option value="">4 person</option>
-              <option value="">5 person</option>
-              <option value="">6 person</option>
+              <option value="1-person">1 person</option>
+              <option value="2-persons">2 persons</option>
+              <option value="3-persons">3 persons</option>
+              <option value="4-persons">4 persons</option>
+              <option value="5-persons">5 persons</option>
+              <option value="6-persons">6 persons</option>
             </select>
+            <button class="button-reservation button" type="submit">
+              Book now
+            </button>
           </form>
-          <button class="button-reservation button" type="submit">
-            Book now
-          </button>
         </div>
       </section>
     </main>

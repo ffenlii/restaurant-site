@@ -20,8 +20,9 @@
               />
             </a>
             <button
-              class="header__btn-burger header-button-burger modal-btn-open'"
+              class="header__btn-burger header-button-burger modal-btn-open"
               type="button"
+              aria-label="Open navigation menu"
             >
               <svg class="header__burger-icon">
                 <use href="./images/icons.svg#icon-nav-open"></use>
@@ -29,11 +30,9 @@
             </button>
           </div>
           <div class="header__contact">
-            <address>
-              <a class="header__link link" href="tel:+86852346000">
-                +86 852 346 000
-              </a>
-            </address>
+            <a class="header__link link" href="tel:+86852346000">
+              +86 852 346 000
+            </a>
             <button class="header__button-reserv button" type="button">
               Reservations
             </button>
@@ -47,7 +46,7 @@
           <img
             class="hero-section__image"
             src="./images/home-hero-background.jpg"
-            alt="stake background"
+            alt=""
           />
           <h1 class="text-title hero-section__title--limited">
             Healthy Eating is important part of lifestyle
@@ -59,7 +58,7 @@
           <img
             class="hero-section__decorate"
             src="./images/plates-with-spices.png"
-            alt="Plates with spices"
+            alt=""
           />
           <ul class="hero-section__underside">
             <li class="hero-section__underside-item">
@@ -99,74 +98,72 @@
             Fresh, healthy, and delicious dishes made with high-quality organic
             ingredients. Perfect for any time of the day.
           </p>
-          <div>
-            <ul class="dish">
-              <li class="dish__item">
-                <p class="dish__price dish__distance">$20</p>
-                <h3 class="dish__title dish__distance">
-                  Deep Sea Snow White Cod Fillet
-                </h3>
-                <p class="text-small">
-                  Grilled cod fillet with fresh herbs, lemon juice, and a side
-                  of baked vegetables.
-                </p>
-              </li>
-              <li class="dish__item">
-                <p class="dish__price">$22</p>
-                <h3 class="dish__title dish__distance">
-                  Steak With Rosemary Butter
-                </h3>
-                <p class="text-small">
-                  Juicy beef steak with homemade rosemary butter and fresh
-                  greens.
-                </p>
-              </li>
-              <li class="dish__item">
-                <p class="dish__price">$18</p>
-                <h3 class="dish__title dish__distance">Cucumber Salad</h3>
-                <p class="text-small">
-                  Crisp organic cucumbers, sour cream dressing, fresh dill, and
-                  sesame seeds.
-                </p>
-              </li>
-              <li class="dish__item">
-                <p class="dish__price">$90</p>
-                <h3 class="dish__title dish__distance">Natural Wine Pairing</h3>
-                <p class="text-small">
-                  A bottle of premium organic wine chosen by our sommelier to
-                  match your dinner.
-                </p>
-              </li>
-            </ul>
-          </div>
+
+          <ul class="dish">
+            <li class="dish__item">
+              <p class="dish__price dish__distance">$20</p>
+              <h3 class="dish__title dish__distance">
+                Deep Sea Snow White Cod Fillet
+              </h3>
+              <p class="text-small">
+                Grilled cod fillet with fresh herbs, lemon juice, and a side of
+                baked vegetables.
+              </p>
+            </li>
+            <li class="dish__item">
+              <p class="dish__price">$22</p>
+              <h3 class="dish__title dish__distance">
+                Steak With Rosemary Butter
+              </h3>
+              <p class="text-small">
+                Juicy beef steak with homemade rosemary butter and fresh greens.
+              </p>
+            </li>
+            <li class="dish__item">
+              <p class="dish__price">$18</p>
+              <h3 class="dish__title dish__distance">Cucumber Salad</h3>
+              <p class="text-small">
+                Crisp organic cucumbers, sour cream dressing, fresh dill, and
+                sesame seeds.
+              </p>
+            </li>
+            <li class="dish__item">
+              <p class="dish__price">$90</p>
+              <h3 class="dish__title dish__distance">Natural Wine Pairing</h3>
+              <p class="text-small">
+                A bottle of premium organic wine chosen by our sommelier to
+                match your dinner.
+              </p>
+            </li>
+          </ul>
         </div>
       </section>
-      <section class="exellent-section">
+      <section class="excellent-section">
         <div class="container">
-          <div class="exellent-section__container">
+          <div class="excellent-section__container">
             <img
-              class="exellent-section__image"
+              class="excellent-section__image"
               src="./images/chef-men-n.png"
               alt="A man cooks fish"
             />
             <div>
-              <h2 class="exellent-section__title section__title">
+              <h2 class="excellent-section__title section__title">
                 Excellent cook
               </h2>
-              <p class="exellent-section__text text-small">
+              <p class="excellent-section__text text-small">
                 Meet our head chef, who brings over 10 years of professional
                 experience to the kitchen. He combines fresh, local products
                 with modern cooking techniques to create healthy and
                 unforgettable meals.
               </p>
               <img
-                class="exellent-section__small-decorate"
-                src="./images/exellent-leaf-small.png"
+                class="excellent-section__small-decorate"
+                src="./images/exсellent-leaf-small.png"
                 alt="Leaf decoration"
               />
               <img
-                class="exellent-section__big-decorate"
-                src="./images/exellent-leaf-big.png"
+                class="excellent-section__big-decorate"
+                src="./images/exсellent-leaf-big.png"
                 alt="Big leaf decoration"
               />
             </div>
@@ -184,9 +181,9 @@
                 </svg>
               </div>
               <div class="advantages-section__inform">
-                <h3 class="advantages-section__title text-centered">
+                <h4 class="advantages-section__title text-centered">
                   Premium Quality
-                </h3>
+                </h4>
                 <p class="text-small text-centered">
                   We select only the freshest meat and seafood from trusted
                   local suppliers.
@@ -200,9 +197,9 @@
                 </svg>
               </div>
               <div class="advantages-section__inform">
-                <h3 class="advantages-section__title text-centered">
+                <h4 class="advantages-section__title text-centered">
                   Seasonal Vegetables
-                </h3>
+                </h4>
                 <p class="text-small text-centered">
                   Our dishes feature organic, non-GMO vegetables grown with care
                   for your health.
@@ -228,14 +225,14 @@
           </ul>
         </div>
       </section>
-      <section class="blogers-section">
+      <section class="blog-section">
         <div class="container">
-          <h3 class="visually-hidden">Blogers' reviewers</h3>
-          <ul class="blogers-section__list">
-            <li>
-              <div class="blogers-section__item">
+          <h3 class="visually-hidden">blog' reviewers</h3>
+          <ul class="blog-section__list">
+            <li class="blog-card">
+              <div class="blog-card__item">
                 <img
-                  class="blogers-section__image"
+                  class="blog-card__image"
                   src="./images/bloger-food.jpg"
                   alt=""
                 />
@@ -243,73 +240,65 @@
                   Healthy Life
                 </button>
               </div>
-              <div class="blogers-section__inform">
+              <div class="blog-card__inform">
                 <img
-                  class="blogers-section__photo"
+                  class="blog-card__photo"
                   src="./images/julie_bloger.png"
                   alt="Julie Christie"
                 />
-                <ul class="blogers-section__text">
+                <ul class="blog-card__text">
                   <li>Julie Christie</li>
-                  <li class="blogers-section__text--hidden-late">
-                    October 17,2021
-                  </li>
-                  <li class="blogers-section__text--hidden">3:33 pm</li>
-                  <li class="blogers-section__text--hidden">2 comments</li>
+                  <li class="blog-card__text--hidden-late">October 17,2021</li>
+                  <li class="blog-card__text--hidden">3:33 pm</li>
+                  <li class="blog-card__text--hidden">2 comments</li>
                 </ul>
               </div>
-              <h3 class="text-normal blogers-section__comment">
+              <h4 class="text-normal blog-card__comment">
                 Fruit and vegetables and protection against diseases
-              </h3>
-              <p class="blogers-section__text--distance text-small">
+              </h4>
+              <p class="blog-card__text--distance text-small">
                 Learn how adding fresh greens and seasonal fruits to your daily
                 meals can boost your energy and immune system.
               </p>
-              <a class="blogers-section__link link" href="blogs.html"
-                >Read more</a
-              >
-              <a href="blogs.html">
-                <svg class="blogers-section__arrow">
+              <a class="blog-card__link link" href="blogs.html"
+                >Read more
+                <svg class="blog-card__arrow">
                   <use href="./images/icons.svg#icon-arrow"></use>
                 </svg>
               </a>
             </li>
-            <li>
-              <div class="blogers-section__item">
+            <li class="blog-card">
+              <div class="blog-card__item">
                 <img
-                  class="blogers-section__image"
+                  class="blog-card__image"
                   src="./images/bloger-plants.jpg"
                   alt=""
                 />
                 <button class="bloger-button" type="button">Recipes</button>
               </div>
-              <div class="blogers-section__inform">
+              <div class="blog-card__inform">
                 <img
-                  class="blogers-section__photo"
+                  class="blog-card__photo"
                   src="./images/dianne_bloger.png"
                   alt="Dianne Russell"
                 />
-                <ul class="blogers-section__text">
+                <ul class="blog-card__text">
                   <li>Dianne Russell</li>
-                  <li class="blogers-section__text--hidden-late">
-                    October 17,2021
-                  </li>
-                  <li class="blogers-section__text--hidden">3:33 pm</li>
-                  <li class="blogers-section__text--hidden">2 comments</li>
+                  <li class="blog-card__text--hidden-late">October 17,2021</li>
+                  <li class="blog-card__text--hidden">3:33 pm</li>
+                  <li class="blog-card__text--hidden">2 comments</li>
                 </ul>
               </div>
-              <h3 class="text-normal blogers-section__comment">
+              <h4 class="text-normal blog-card__comment">
                 Asparagus Spring Salad with Rocket, Goat's Cheese
-              </h3>
-              <p class="blogers-section__text--distance text-small">
+              </h4>
+              <p class="blog-card__text--distance text-small">
                 A quick and easy guide to making a perfect spring salad with
                 fresh asparagus, goat cheese, and a light olive oil dressing.
               </p>
-              <a class="blogers-section__link link" href="blogs.html"
-                >Read more</a
-              >
-              <a href="blogs.html">
-                <svg class="blogers-section__arrow">
+              <a class="blog-card__link link" href="blogs.html"
+                >Read more
+                <svg class="blog-card__arrow">
                   <use href="./images/icons.svg#icon-arrow"></use>
                 </svg>
               </a>
@@ -317,18 +306,18 @@
           </ul>
         </div>
       </section>
-      <section class="reservation-section">
+      <section class="booking-section">
         <div class="container">
-          <h2 class="reservation-section__title section__title">
+          <h2 class="booking-section__title section__title">
             Make a Reservation
           </h2>
-          <p class="text-small reservation-text">
+          <p class="text-small booking-section__subtitle">
             Get in touch with restaurant
           </p>
-          <form class="book-form">
+          <form class="booking-form">
             <label class="visually-hidden" for="book-date">Date</label>
             <input
-              class="book-select reservation-element"
+              class="booking-form__select booking-form__element"
               type="date"
               name="book-date"
               id="book-date"
@@ -336,39 +325,38 @@
 
             <label class="visually-hidden" for="book-time">Time</label>
             <select
-              class="book-select reservation-element"
+              class="booking-form__select booking-form__element"
               name="book-time"
               id="book-time"
             >
-              <option value="">1:00 pm</option>
-              <option value="">2:00 pm</option>
-              <option value="">3:00 pm</option>
-              <option value="">4:00 pm</option>
-              <option value="">5:00 pm</option>
-              <option value="">6:00 pm</option>
-              <option value="">7:00 pm</option>
-              <option value="">8:00 pm</option>
-              <option value="">9:00 pm</option>
+              <option value="1:00 pm">1:00 pm</option>
+              <option value="2:00 pm">2:00 pm</option>
+              <option value="3:00 pm">3:00 pm</option>
+              <option value="4:00 pm">4:00 pm</option>
+              <option value="5:00 pm">5:00 pm</option>
+              <option value="6:00 pm">6:00 pm</option>
+              <option value="7:00 pm">7:00 pm</option>
+              <option value="8:00 pm">8:00 pm</option>
+              <option value="9:00 pm">9:00 pm</option>
             </select>
 
             <label class="visually-hidden" for="book-persons">Persons</label>
             <select
-              class="book-select reservation-element"
-              type="date"
+              class="booking-form__select booking-form__element"
               name="book-persons"
               id="book-persons"
             >
-              <option value="">1 person</option>
-              <option value="">2 person</option>
-              <option value="">3 person</option>
-              <option value="">4 person</option>
-              <option value="">5 person</option>
-              <option value="">6 person</option>
+              <option value="1-person">1 person</option>
+              <option value="2-persons">2 persons</option>
+              <option value="3-persons">3 persons</option>
+              <option value="4-persons">4 persons</option>
+              <option value="5-persons">5 persons</option>
+              <option value="6-persons">6 persons</option>
             </select>
+            <button class="button-reservation button" type="submit">
+              Book now
+            </button>
           </form>
-          <button class="button-reservation button" type="submit">
-            Book now
-          </button>
         </div>
       </section>
       <section class="energy-section">
@@ -387,19 +375,15 @@
                     src="./images/energy-starters-item.jpg"
                     alt="Starters background"
                   />
-                  <div class="energy-card__link">
-                    <a class="link menu-link" href="menu.html#starters-section"
-                      >Starters</a
-                    >
-                    <a
-                      class="energy-card__icon"
-                      href="menu.html#starters-section"
-                    >
-                      <svg class="energy-card__arrow">
-                        <use href="./images/icons.svg#icon-arrow"></use>
-                      </svg>
-                    </a>
-                  </div>
+                  <a
+                    class="energy-card__link link menu-link"
+                    href="menu.html#starters-section"
+                  >
+                    <span energy-card__name> Starters</span>
+                    <svg class="energy-card__arrow">
+                      <use href="./images/icons.svg#icon-arrow"></use>
+                    </svg>
+                  </a>
                 </article>
               </li>
               <li class="energy-section__item swiper-slide">
@@ -409,16 +393,15 @@
                     src="./images/energy-mains-item.jpg"
                     alt="Mains background"
                   />
-                  <div class="energy-card__link">
-                    <a class="link menu-link" href="menu.html#mains-section"
-                      >Mains</a
-                    >
-                    <a class="energy-card__icon" href="menu.html#mains-section">
-                      <svg class="energy-card__arrow">
-                        <use href="./images/icons.svg#icon-arrow"></use>
-                      </svg>
-                    </a>
-                  </div>
+                  <a
+                    class="energy-card__link link menu-link"
+                    href="menu.html#mains-section"
+                  >
+                    Mains
+                    <svg class="energy-card__arrow">
+                      <use href="./images/icons.svg#icon-arrow"></use>
+                    </svg>
+                  </a>
                 </article>
               </li>
               <li class="energy-section__item swiper-slide">
@@ -428,19 +411,15 @@
                     src="./images/energy-soups-item.jpg"
                     alt="Soups background"
                   />
-                  <div class="energy-card__link">
-                    <a class="link menu-link" href="menu.html#drinks-section"
-                      >Drinks</a
-                    >
-                    <a
-                      class="energy-card__icon"
-                      href="menu.html#drinks-section"
-                    >
-                      <svg class="energy-card__arrow">
-                        <use href="./images/icons.svg#icon-arrow"></use>
-                      </svg>
-                    </a>
-                  </div>
+
+                  <a
+                    class="energy-card__link link menu-link"
+                    href="menu.html#drinks-section"
+                    >Drinks
+                    <svg class="energy-card__arrow">
+                      <use href="./images/icons.svg#icon-arrow"></use>
+                    </svg>
+                  </a>
                 </article>
               </li>
             </ul>
@@ -456,15 +435,15 @@
             dishes look like a piece of art."
           </p>
           <div class="comment-section__container">
-            <div class="people-comment">
+            <div class="comment-section__author">
               <img
-                class="people-comment__photo"
+                class="comment-section__avatar"
                 src="./images/john_do.png"
                 alt="Girl with a camera"
               />
-              <div class="people-comment__inform">
-                <p class="people-comment__name">John Doe</p>
-                <p class="people-comment__mark">Bloger</p>
+              <div class="comment-section__author-info">
+                <p class="comment-section__author-name">John Doe</p>
+                <p class="comment-section__author-status">Bloger</p>
               </div>
             </div>
             <div class="comment-section__arrow">
@@ -491,26 +470,28 @@
             <a class="footer__logo" href="./index.html">
               <h3 class="footer__title">Food Zero.</h3>
             </a>
-            <ul class="address__contacts">
-              <p class="footer__item">Contacts</p>
-              <li>
-                <a class="link address__link" href="tel:+86852346000"
-                  >+86 852 346 000</a
-                >
-              </li>
-              <li>
-                <a class="link address__link" href="mailto:info@foodzero.com"
-                  >info@foodzero.com</a
-                >
-              </li>
-              <li>
-                <a
-                  class="link address__link"
-                  href="https://maps.app.goo.gl/G3fx3dMrVu5tf39C7"
-                  >1959 Sepulveda Blvd. Culver City, CA, 90230</a
-                >
-              </li>
-            </ul>
+            <p class="footer__item">Contacts</p>
+            <address>
+              <ul class="address__contacts">
+                <li>
+                  <a class="link address__link" href="tel:+86852346000"
+                    >+86 852 346 000</a
+                  >
+                </li>
+                <li>
+                  <a class="link address__link" href="mailto:info@foodzero.com"
+                    >info@foodzero.com</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="link address__link"
+                    href="https://maps.app.goo.gl/G3fx3dMrVu5tf39C7"
+                    >1959 Sepulveda Blvd. Culver City, CA, 90230</a
+                  >
+                </li>
+              </ul>
+            </address>
           </div>
           <div class="footer__form">
             <p class="footer__form-item">Never Miss a Recipe</p>
@@ -529,10 +510,11 @@
                     placeholder="Email Address"
                   />
                 </div>
+
+                <button class="button-subscribe button" type="submit">
+                  Subscribe
+                </button>
               </form>
-              <button class="button-subscribe button" type="submit">
-                Subscibe
-              </button>
             </div>
             <p class="footer__inform">
               Join our subscribers and get best recipe delivered each week!
@@ -543,38 +525,37 @@
           <p class="footer__copyright">
             &copy; 2020 Zero Inc. All rights Reserved
           </p>
-          <address>
-            <ul class="address__social">
-              <li>
-                <a href="#">
-                  <svg class="address__icon" width="28" height="28">
-                    <use href="./images/icons.svg#icon-instagram"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <svg class="address__icon" width="28" height="22">
-                    <use href="./images/icons.svg#icon-twitter"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <svg class="address__icon" width="26" height="26">
-                    <use href="./images/icons.svg#icon-facebook"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <svg class="address__icon" width="28" height="22">
-                    <use href="./images/icons.svg#icon-youtube"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </address>
+
+          <ul class="address__social">
+            <li>
+              <a href="#">
+                <svg class="address__icon" width="28" height="28">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg class="address__icon" width="28" height="22">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg class="address__icon" width="26" height="26">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg class="address__icon" width="28" height="22">
+                  <use href="./images/icons.svg#icon-youtube"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </footer>

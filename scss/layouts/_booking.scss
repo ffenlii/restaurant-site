@@ -1,0 +1,37 @@
+@use '../utils/variables' as *;
+
+.booking-section {
+  padding: 240px 0 250px;
+  background-color: var(--color-white-eb);
+  text-align: center;
+
+  @media screen and (max-width: $bp-desktop) {
+    padding: 140px 0 150px 0;
+  }
+
+  @media screen and (max-width: $bp-tablet) {
+    padding: 60px 0 80px 0;
+  }
+
+  &__title {
+    @media screen and (max-width: $bp-tablet) {
+      font-size: 68px;
+    }
+
+    @media screen and (max-width: $bp-mobile) {
+      font-size: 48px;
+    }
+  }
+
+  &__subtitle {
+    margin-bottom: 135px;
+
+    @media screen and (max-width: $bp-desktop) {
+      margin-bottom: 100px;
+    }
+
+    @media screen and (max-width: $bp-desktop) {
+      margin-bottom: 60px;
+    }
+  }
+}

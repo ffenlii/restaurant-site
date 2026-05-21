@@ -54,47 +54,8 @@
       margin-bottom: 24px;
     }
   }
-}
 
-.people-comment {
-  display: flex;
-  gap: 16px;
-
-  &__inform {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    @media screen and (max-width: $bp-mobile) {
-      margin-bottom: 8px;
-    }
-  }
-
-  &__name {
-    font-size: 32px;
-
-    @media screen and (max-width: $bp-tablet) {
-      font-size: 24px;
-    }
-
-    @media screen and (max-width: $bp-mobile) {
-      font-size: 16px;
-    }
-  }
-
-  &__mark {
-    font-size: 18px;
-
-    @media screen and (max-width: $bp-tablet) {
-      font-size: 16px;
-    }
-
-    @media screen and (max-width: $bp-mobile) {
-      font-size: 10px;
-    }
-  }
-
-  &__photo {
+  &__avatar {
     width: 164px;
     height: 164px;
 
@@ -106,6 +67,45 @@
     @media screen and (max-width: $bp-mobile) {
       width: 48px;
       height: 48px;
+    }
+  }
+
+  &__author {
+    display: flex;
+    gap: 16px;
+
+    &-inform {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      @media screen and (max-width: $bp-mobile) {
+        margin-bottom: 8px;
+      }
+    }
+
+    &-name {
+      font-size: 32px;
+
+      @media screen and (max-width: $bp-tablet) {
+        font-size: 24px;
+      }
+
+      @media screen and (max-width: $bp-mobile) {
+        font-size: 16px;
+      }
+    }
+
+    &-status {
+      font-size: 18px;
+
+      @media screen and (max-width: $bp-tablet) {
+        font-size: 16px;
+      }
+
+      @media screen and (max-width: $bp-mobile) {
+        font-size: 10px;
+      }
     }
   }
 }

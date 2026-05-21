@@ -1,36 +1,16 @@
-@use '../../utils/variables' as *;
+@use '../utils/variables' as *;
 
-.blogers-section {
-  padding: 130px 0 100px 0;
+.blog-card {
+  &__item {
+    margin-bottom: 68px;
+    position: relative;
 
-  @media screen and (max-width: $bp-desktop) {
-    padding-top: 80px;
-  }
-
-  @media screen and (max-width: $bp-tablet) {
-    padding: 40px 0;
-  }
-
-  &__list {
-    display: flex;
-    gap: 20px;
-    justify-content: space-between;
-
-    @media screen and (max-width: $bp-mobile) {
-      gap: 40px;
-      flex-direction: column;
+    @media screen and (max-width: $bp-desktop) {
+      margin-bottom: 28px;
     }
-  }
-
-  &__photo {
-    width: 84px;
 
     @media screen and (max-width: $bp-tablet) {
-      width: 54px;
-    }
-
-    @media screen and (max-width: $bp-mobile) {
-      width: 44px;
+      margin-bottom: 8px;
     }
   }
 
@@ -62,6 +42,18 @@
     }
   }
 
+  &__photo {
+    width: 84px;
+
+    @media screen and (max-width: $bp-tablet) {
+      width: 54px;
+    }
+
+    @media screen and (max-width: $bp-mobile) {
+      width: 44px;
+    }
+  }
+
   &__text {
     display: flex;
     gap: 32px;
@@ -83,19 +75,6 @@
       @media screen and (max-width: $bp-tablet) {
         margin: 0;
       }
-    }
-  }
-
-  &__item {
-    margin-bottom: 68px;
-    position: relative;
-
-    @media screen and (max-width: $bp-desktop) {
-      margin-bottom: 28px;
-    }
-
-    @media screen and (max-width: $bp-tablet) {
-      margin-bottom: 8px;
     }
   }
 
