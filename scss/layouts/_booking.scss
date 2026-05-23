@@ -14,8 +14,15 @@
   }
 
   &__title {
+    font-size: 108px;
+    margin-bottom: 18px;
+
+    @media screen and (max-width: $bp-desktop) {
+      font-size: 64px;
+    }
+
     @media screen and (max-width: $bp-tablet) {
-      font-size: 68px;
+      font-size: 64px;
     }
 
     @media screen and (max-width: $bp-mobile) {
