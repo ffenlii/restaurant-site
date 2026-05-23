@@ -53,6 +53,46 @@ button {
   }
 }
 
+.button__modal-reservation {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  border: none;
+  padding: 0;
+}
+
+.ring-button {
+  display: none;
+
+  @media screen and (max-width: $bp-mobile) {
+    display: block;
+    padding: 12px;
+    border-radius: 50%;
+    background-color: var(--color-brand-normal);
+    position: fixed;
+    right: 32px;
+    top: 530px;
+    z-index: 2;
+    transition:
+      transform 0.3s,
+      background-color 0.3s;
+
+    &:hover {
+      transform: scale(1.03);
+    }
+
+    &:active {
+      background-color: var(--color-brand-dark);
+    }
+
+    &__icon {
+      width: 40px;
+      height: 40px;
+      fill: var(--color-white-f);
+    }
+  }
+}
+
 .button-reservation {
   background-color: var(--color-brand-dark);
   border-color: var(--color-black);

@@ -45,10 +45,10 @@
   }
 
   &__link {
-    color: var(--color-white-f);
     font-size: 18px;
     font-weight: 400;
     transition: color 0.3s;
+    color: var(--color-white-f);
 
     &:hover {
       color: var(--color-brand-light);
