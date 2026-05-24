@@ -31,8 +31,12 @@
 .text-topic {
   font-size: 108px;
 
-  @media screen and (max-width: $bp-tablet) {
+  @media screen and (max-width: $bp-desktop) {
     font-size: 88px;
+  }
+
+  @media screen and (max-width: $bp-tablet) {
+    font-size: 64px;
   }
 
   @media screen and (max-width: $bp-mobile) {

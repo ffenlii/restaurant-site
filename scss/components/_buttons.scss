@@ -29,175 +29,178 @@ button {
   }
 }
 
-.header__button-reserv {
-  border-color: var(--color-white-f);
-  font-family: 'Rufina', serif;
-
-  &:hover {
-    background-color: var(--color-brand-normal);
-    border-color: var(--color-brand-normal);
-  }
-}
-
-.header__btn-burger {
-  flex-shrink: 0;
-  padding: 0;
-  border: none;
-  /* Тому, що іконка лініями */
-  stroke: var(--color-white-f);
-  width: 74px;
-  height: 61px;
-
-  &:hover {
-    stroke: var(--color-light-grey);
-  }
-}
-
-.button__modal-reservation {
-  position: absolute;
-  top: 30px;
-  right: 30px;
-  border: none;
-  padding: 0;
-}
-
-.ring-button {
-  display: none;
-
-  @media screen and (max-width: $bp-mobile) {
-    display: block;
-    padding: 12px;
-    border-radius: 50%;
-    background-color: var(--color-brand-normal);
-    position: fixed;
-    right: 32px;
-    bottom: 32px;
-    z-index: 2;
-    transition:
-      transform 0.3s,
-      background-color 0.3s;
+.button {
+  &__header-burger {
+    flex-shrink: 0;
+    padding: 0;
+    border: none;
+    /* Тому, що іконка лініями */
+    stroke: var(--color-white-f);
+    width: 74px;
+    height: 61px;
 
     &:hover {
-      transform: scale(1.03);
-    }
-
-    &:active {
-      background-color: var(--color-brand-dark);
-    }
-
-    &__icon {
-      width: 40px;
-      height: 40px;
-      fill: var(--color-white-f);
+      stroke: var(--color-light-grey);
     }
   }
-}
 
-.button-reservation {
-  background-color: var(--color-brand-dark);
-  border-color: var(--color-black);
-  padding: 20px 95px;
-  margin-top: 100px;
-
-  @media screen and (max-width: $bp-desktop) {
-    margin-top: 56px;
-  }
-
-  @media screen and (max-width: $bp-tablet) {
-    padding: 20px 64px;
-    margin-top: 24px;
-  }
-
-  @media screen and (max-width: $bp-tablet) {
-    padding: 10px 44px;
-    margin-top: 14px;
-  }
-}
-
-.button-reservation-light {
-  background-color: var(--color-brand-normal);
-  transition: transform 0.3s;
-
-  &:hover {
-    background-color: var(--color-brand-dark);
-  }
-}
-
-.bloger-button {
-  background-color: var(--color-brand-normal);
-  border: none;
-  line-height: 1.7;
-  padding: 7px 53px;
-  position: absolute;
-  top: 12px;
-  right: 12px;
-
-  @media screen and (max-width: $bp-tablet) {
-    padding: 2px 24px;
-  }
-}
-
-.button-subscribe {
-  background-color: var(--color-brand-normal);
-  border: none;
-
-  &:hover {
-    background-color: transparent;
+  &__header-reserv {
     border-color: var(--color-white-f);
+    font-family: 'Rufina', serif;
+
+    &:hover {
+      background-color: var(--color-brand-normal);
+      border-color: var(--color-brand-normal);
+    }
   }
-}
 
-.comment-button {
-  border: none;
-  transition: transform 0.3s;
-  padding: 0 14px;
+  &__ring-fixed {
+    display: none;
 
-  &__icon {
-    width: 108px;
-    height: 24px;
+    @media screen and (max-width: $bp-mobile) {
+      display: block;
+      padding: 12px;
+      border-radius: 50%;
+      background-color: var(--color-brand-normal);
+      position: fixed;
+      right: 32px;
+      bottom: 32px;
+      z-index: 2;
+      transition:
+        transform 0.3s,
+        background-color 0.3s;
+
+      &:hover {
+        transform: scale(1.03);
+      }
+
+      &:active {
+        background-color: var(--color-brand-dark);
+      }
+
+      &-icon {
+        width: 40px;
+        height: 40px;
+        fill: var(--color-white-f);
+      }
+    }
+  }
+
+  &__blog {
+    background-color: var(--color-brand-normal);
+    border: none;
+    line-height: 1.7;
+    padding: 7px 53px;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+
+    @media screen and (max-width: $bp-tablet) {
+      padding: 2px 24px;
+    }
+  }
+
+  &__booking {
+    background-color: var(--color-brand-dark);
+    border-color: var(--color-black);
+    padding: 20px 95px;
+    margin-top: 100px;
 
     @media screen and (max-width: $bp-desktop) {
-      width: 68px;
-      height: 34px;
+      margin-top: 56px;
     }
 
     @media screen and (max-width: $bp-tablet) {
-      width: 40px;
-      height: 20px;
+      padding: 20px 64px;
+      margin-top: 24px;
     }
+
+    @media screen and (max-width: $bp-tablet) {
+      padding: 10px 44px;
+      margin-top: 14px;
+    }
+  }
+
+  &__reservation {
+    background-color: var(--color-brand-normal);
+    transition: transform 0.3s;
+
+    &:hover {
+      background-color: var(--color-brand-dark);
+    }
+  }
+
+  &__comment {
+    border: none;
+    transition: transform 0.3s;
+    padding: 0 14px;
+
+    &-icon {
+      width: 108px;
+      height: 48px;
+
+      @media screen and (max-width: $bp-desktop) {
+        width: 68px;
+        height: 34px;
+      }
+
+      @media screen and (max-width: $bp-tablet) {
+        width: 40px;
+        height: 20px;
+      }
+
+      @media screen and (max-width: $bp-mobile) {
+        width: 20px;
+        height: 10px;
+      }
+    }
+
+    &:hover {
+      transform: scale(1.1);
+    }
+
+    &.back {
+      transform: rotate(180deg);
+    }
+  }
+
+  &__footer-subscribe {
+    background-color: var(--color-brand-normal);
+    border: none;
+
+    &:hover {
+      background-color: transparent;
+      border-color: var(--color-white-f);
+    }
+  }
+
+  &__modal-close {
+    border: none;
+    position: absolute;
+    top: 40px;
+    left: 45px;
+    width: 85px;
+    height: 65px;
+    fill: var(--color-black);
+    padding: 0;
 
     @media screen and (max-width: $bp-mobile) {
-      width: 20px;
-      height: 10px;
+      top: 10px;
+      right: 10px;
+      left: auto;
+    }
+
+    &:hover {
+      fill: var(--color-white-f);
+      cursor: pointer;
     }
   }
 
-  &:hover {
-    transform: scale(1.1);
-  }
-
-  &.back {
-    transform: rotate(180deg);
-  }
-}
-
-.modal-btn-close {
-  border: none;
-  position: absolute;
-  top: 40px;
-  left: 45px;
-  width: 85px;
-  height: 65px;
-  fill: var(--color-black);
-  padding: 0;
-
-  @media screen and (max-width: $bp-mobile) {
-    top: 10px;
-    left: 10px;
-  }
-
-  &:hover {
-    fill: var(--color-white-f);
-    cursor: pointer;
+  &__modal-reservation-close {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    border: none;
+    padding: 0;
   }
 }

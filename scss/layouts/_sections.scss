@@ -11,8 +11,12 @@
     font-size: 108px;
     margin-bottom: 18px;
 
+    @media screen and (max-width: $bp-desktop) {
+      font-size: 88px;
+    }
+
     @media screen and (max-width: $bp-tablet) {
-      font-size: 84px;
+      font-size: 72px;
     }
 
     @media screen and (max-width: $bp-mobile) {

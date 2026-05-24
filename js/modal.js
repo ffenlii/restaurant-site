@@ -1,6 +1,6 @@
 const modal = document.querySelector('.modal');
 
-const modalBtnOpen = document.querySelector('.header-button-burger');
+const modalBtnOpen = document.querySelector('.modal-btn-open');
 
 const toggleModal = () => modal.classList.toggle('is-hidden');
 

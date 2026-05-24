@@ -20,7 +20,7 @@
               />
             </a>
             <button
-              class="header__btn-burger header-button-burger modal-btn-open"
+              class="button__header-burger modal-btn-open"
               type="button"
               aria-label="Open navigation menu"
             >
@@ -34,7 +34,7 @@
               +86 852 346 000
             </a>
             <button
-              class="header__button-reserv button js-open-reservation"
+              class="button__header-reserv js-open-reservation"
               type="button"
             >
               Reservations
@@ -73,8 +73,8 @@
               alt="people are cooking something"
             />
           </div>
-          <button class="ring-button js-open-reservation" type="button">
-            <svg class="ring-button__icon">
+          <button class="button__ring-fixed js-open-reservation" type="button">
+            <svg class="button__ring-fixed-icon">
               <use href="./images/icons.svg#icon-bell"></use>
             </svg>
           </button>
@@ -199,9 +199,7 @@
       </section>
       <section class="booking-section">
         <div class="container">
-          <h2 class="booking-section__title section__title">
-            Make a Reservation
-          </h2>
+          <h2 class="booking-section__title">Make a Reservation</h2>
           <p class="text-small booking-section__subtitle">
             Get in touch with restaurant
           </p>
@@ -244,9 +242,7 @@
               <option value="5-persons">5 persons</option>
               <option value="6-persons">6 persons</option>
             </select>
-            <button class="button-reservation button" type="submit">
-              Book now
-            </button>
+            <button class="button__booking" type="submit">Book now</button>
           </form>
         </div>
       </section>
@@ -255,29 +251,35 @@
       <div class="container">
         <div class="footer__container">
           <div class="footer__link">
-            <a class="footer__logo" href="./about.html">
+            <a class="footer__logo" href="./index.html">
               <h3 class="footer__title">Food Zero.</h3>
             </a>
-            <ul class="address__contacts">
+            <div class="footer__contacts">
               <p class="footer__item">Contacts</p>
-              <li>
-                <a class="link address__link" href="tel:+86852346000"
-                  >+86 852 346 000</a
-                >
-              </li>
-              <li>
-                <a class="link address__link" href="mailto:info@foodzero.com"
-                  >info@foodzero.com</a
-                >
-              </li>
-              <li>
-                <a
-                  class="link address__link"
-                  href="https://maps.app.goo.gl/G3fx3dMrVu5tf39C7"
-                  >1959 Sepulveda Blvd. Culver City, CA, 90230</a
-                >
-              </li>
-            </ul>
+              <address>
+                <ul class="address__contacts">
+                  <li>
+                    <a class="link address__link" href="tel:+86852346000"
+                      >+86 852 346 000</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="link address__link"
+                      href="mailto:info@foodzero.com"
+                      >info@foodzero.com</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="link address__link"
+                      href="https://maps.app.goo.gl/G3fx3dMrVu5tf39C7"
+                      >1959 Sepulveda Blvd. Culver City, CA, 90230</a
+                    >
+                  </li>
+                </ul>
+              </address>
+            </div>
           </div>
           <div class="footer__form">
             <p class="footer__form-item">Never Miss a Recipe</p>
@@ -296,10 +298,11 @@
                     placeholder="Email Address"
                   />
                 </div>
+
+                <button class="button__footer-subscribe" type="submit">
+                  Subscribe
+                </button>
               </form>
-              <button class="button-subscribe button" type="submit">
-                Subscibe
-              </button>
             </div>
             <p class="footer__inform">
               Join our subscribers and get best recipe delivered each week!
@@ -310,47 +313,49 @@
           <p class="footer__copyright">
             &copy; 2020 Zero Inc. All rights Reserved
           </p>
-          <address>
-            <ul class="address__social">
-              <li>
-                <a href="#">
-                  <svg class="address__icon" width="28" height="28">
-                    <use href="./images/icons.svg#icon-instagram"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <svg class="address__icon" width="28" height="22">
-                    <use href="./images/icons.svg#icon-twitter"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <svg class="address__icon" width="26" height="26">
-                    <use href="./images/icons.svg#icon-facebook"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <svg class="address__icon" width="28" height="22">
-                    <use href="./images/icons.svg#icon-youtube"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </address>
+
+          <ul class="address__social">
+            <li>
+              <a href="#">
+                <svg class="address__icon" width="28" height="28">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg class="address__icon" width="28" height="22">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg class="address__icon" width="26" height="26">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg class="address__icon" width="28" height="22">
+                  <use href="./images/icons.svg#icon-youtube"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </footer>
 
     <div class="modal is-hidden">
       <div class="modal__window">
-        <button class="modal-btn-close" type="button">
+        <button class="button__modal-close modal-btn-close" type="button">
           <svg class="test">
-            <use class="modal__btn-icon" href=".//images/modal-btn.svg"></use>
+            <use
+              class="modal__btn-icon"
+              href="./images/icons.svg#icon-modal-btn"
+            ></use>
           </svg>
         </button>
         <ul class="modal__link">
@@ -424,7 +429,7 @@
 
     <div class="modal-reservation is-hidden">
       <div class="modal-reservation__window">
-        <button class="button__modal-reservation modal-reservation-close">
+        <button class="button__modal-reservation-close modal-reservation-close">
           <svg class="modal-reservation__icon">
             <use href="./images/icons.svg#icon-modal-btn"></use>
           </svg>
@@ -522,9 +527,7 @@
             <option value="6-persons">6 persons</option>
           </select>
 
-          <button class="button-reservation-light" type="submit">
-            Book now
-          </button>
+          <button class="button__reservation" type="submit">Book now</button>
         </form>
       </div>
     </div>
