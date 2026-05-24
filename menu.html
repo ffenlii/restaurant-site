@@ -33,7 +33,10 @@
             <a class="header__link link" href="tel:+86852346000">
               +86 852 346 000
             </a>
-            <button class="header__button-reserv button" type="button">
+            <button
+              class="header__button-reserv button js-open-reservation"
+              type="button"
+            >
               Reservations
             </button>
           </div>
@@ -48,6 +51,11 @@
             New Menu
           </h1>
           <p class="text-medium">The freshest ingredients for you every day</p>
+          <button class="ring-button js-open-reservation" type="button">
+            <svg class="ring-button__icon">
+              <use href="./images/icons.svg#icon-bell"></use>
+            </svg>
+          </button>
         </div>
       </section>
       <section class="starters-section" id="starters-section">
@@ -411,6 +419,114 @@
       </div>
     </div>
 
+    <div class="modal-reservation is-hidden">
+      <div class="modal-reservation__window">
+        <button class="button__modal-reservation modal-reservation-close">
+          <svg class="modal-reservation__icon">
+            <use href="./images/icons.svg#icon-modal-btn"></use>
+          </svg>
+        </button>
+
+        <div class="modal-reservation__chapter">
+          <h2 class="modal-reservation__title section__title">
+            Make a Reservation
+          </h2>
+          <p class="modal-reservation__info text-small">
+            Fill in the details to reserve a table
+          </p>
+        </div>
+        <form>
+          <div class="modal-reservation__group">
+            <label class="visually-hidden" for="user-first-name">
+              First name
+            </label>
+            <input
+              class="booking-form__element modal-reservation__position"
+              type="text"
+              name="user-first-name"
+              id="user-first-name"
+              placeholder="First name"
+            />
+
+            <label class="visually-hidden" for="user-last-name">
+              Last name
+            </label>
+            <input
+              class="booking-form__element modal-reservation__position"
+              type="text"
+              name="user-last-name"
+              id="user-last-name"
+              placeholder="Last name"
+            />
+          </div>
+
+          <label class="visually-hidden" for="user-email">Email</label>
+          <input
+            class="booking-form__element modal-reservation__position"
+            type="email"
+            name="user-email"
+            id="user-email"
+            placeholder="Email"
+          />
+
+          <label class="visually-hidden" for="user-tel">Phone</label>
+          <input
+            class="booking-form__element modal-reservation__position"
+            type="tel"
+            name="user-tel"
+            id="user-tel"
+            placeholder="Phone"
+          />
+
+          <div class="modal-reservation__group">
+            <label class="visually-hidden" for="book-date">Date</label>
+            <input
+              class="booking-form__element modal-reservation__position"
+              type="date"
+              name="book-date"
+              id="book-date"
+            />
+
+            <label class="visually-hidden" for="book-time">Time</label>
+            <select
+              class="booking-form__element modal-reservation__position"
+              name="book-time"
+              id="book-time"
+            >
+              <option value="1:00 pm">1:00 pm</option>
+              <option value="2:00 pm">2:00 pm</option>
+              <option value="3:00 pm">3:00 pm</option>
+              <option value="4:00 pm">4:00 pm</option>
+              <option value="5:00 pm">5:00 pm</option>
+              <option value="6:00 pm">6:00 pm</option>
+              <option value="7:00 pm">7:00 pm</option>
+              <option value="8:00 pm">8:00 pm</option>
+              <option value="9:00 pm">9:00 pm</option>
+            </select>
+          </div>
+
+          <label class="visually-hidden" for="book-persons">Persons</label>
+          <select
+            class="booking-form__element modal-reservation__position"
+            name="book-persons"
+            id="book-persons"
+          >
+            <option value="1-person">1 person</option>
+            <option value="2-persons">2 persons</option>
+            <option value="3-persons">3 persons</option>
+            <option value="4-persons">4 persons</option>
+            <option value="5-persons">5 persons</option>
+            <option value="6-persons">6 persons</option>
+          </select>
+
+          <button class="button-reservation-light" type="submit">
+            Book now
+          </button>
+        </form>
+      </div>
+    </div>
+
     <script src="./js/modal.js"></script>
+    <script src="./js/reservation-modal.js"></script>
   </body>
 </html>

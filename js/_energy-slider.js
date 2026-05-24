@@ -1,11 +1,11 @@
 const swiper = new Swiper('.swiper', {
   // Використовуємо ваш клас .swiper
-  loop: true,
+  loop: false,
   slidesPerView: 1,
   spaceBetween: 20,
   grabCursor: true, // Курсор-рука для зручності
   simulateTouch: true,
-  touchStartPreventDefault: false,
+  //touchStartPreventDefault: false,
 
   // Налаштування адаптиву
   breakpoints: {

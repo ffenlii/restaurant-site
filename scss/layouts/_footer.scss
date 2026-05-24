@@ -53,6 +53,7 @@
     font-size: 68px;
     max-width: 188px;
     color: var(--color-white-f);
+    margin-bottom: 24px;
 
     @media screen and (max-width: $bp-tablet) {
       max-width: none;
@@ -66,7 +67,7 @@
 
   &__item {
     font-size: 32px;
-    margin-bottom: 55px;
+    margin-bottom: 24px;
 
     @media screen and (max-width: $bp-desktop) {
       margin-bottom: 0;
@@ -76,9 +77,14 @@
       font-size: 24px;
     }
 
-    @media screen and (max-width: $bp-tablet) {
+    @media screen and (max-width: $bp-mobile) {
       font-size: 18px;
     }
+  }
+
+  &__contacts {
+    display: flex;
+    flex-direction: column;
   }
 
   &__form {
@@ -106,6 +112,7 @@
 
   &__inform {
     font-size: 14px;
+    margin: 8px 0;
 
     @media screen and (max-width: $bp-desktop) {
       display: none;
@@ -167,6 +174,10 @@
 
 .subscribe-form {
   flex-grow: 1;
+
+  @media screen and (max-width: $bp-tablet) {
+    text-align: center;
+  }
 }
 
 .footer-address {
